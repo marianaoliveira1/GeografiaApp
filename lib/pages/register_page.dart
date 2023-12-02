@@ -3,8 +3,8 @@ import 'package:geografia/utils/colors.dart';
 import 'package:geografia/widgets/default_input_text.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+class RegisterPage extends StatelessWidget {
+  const RegisterPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,18 +18,22 @@ class LoginPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/icons/parrot.png',
+                'assets/icons/palmeira.png',
                 height: 150,
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              Text(
+                'Cadastre-se',
+                style: GoogleFonts.poppins(color: DefaultColors.white, fontSize: 24),
               ),
               const SizedBox(
                 height: 50,
               ),
-              Text(
-                'Bem-vindo de volta',
-                style: GoogleFonts.poppins(color: DefaultColors.white, fontSize: 24),
-              ),
+              const DefaultInputText(hintText: 'Nome', icon: Icons.person),
               const SizedBox(
-                height: 40,
+                height: 20,
               ),
               const DefaultInputText(hintText: 'Email', icon: Icons.email),
               const SizedBox(
@@ -37,23 +41,27 @@ class LoginPage extends StatelessWidget {
               ),
               const DefaultInputText(hintText: 'Senha', icon: Icons.lock),
               const SizedBox(
-                height: 15,
+                height: 20,
+              ),
+              const DefaultInputText(hintText: 'Confirmar senha', icon: Icons.lock),
+              const SizedBox(
+                height: 20,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Text(
-                    'Ainda não possui uma conta? ',
+                    'Já possui uma conta? ',
                     style: GoogleFonts.poppins(color: DefaultColors.gray100, fontSize: 12),
                   ),
                   Text(
-                    'Cadastre-se  ',
+                    'Entrar',
                     style: GoogleFonts.poppins(color: DefaultColors.white, fontSize: 12),
                   ),
                 ],
               ),
               const SizedBox(
-                height: 80,
+                height: 50,
               ),
               Container(
                 decoration: BoxDecoration(
@@ -64,7 +72,6 @@ class LoginPage extends StatelessWidget {
                 padding: const EdgeInsets.only(bottom: 10, top: 10),
                 child: InkWell(
                   child: Text(
-                    //place this text centered
                     'Entrar',
                     textAlign: TextAlign.center,
                     style: GoogleFonts.poppins(color: DefaultColors.back, fontSize: 16, fontWeight: FontWeight.w600),

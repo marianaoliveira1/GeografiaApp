@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import 'package:geografia/pages/login_page.dart';
+import 'package:geografia/pages/register_page.dart';
 import 'package:geografia/utils/colors.dart';
 
 class SpashPage extends StatefulWidget {
@@ -20,7 +21,7 @@ class _SpashPageState extends State<SpashPage> {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => LoginPage(),
+          builder: (context) => RegisterPage(),
         ),
       );
     });
