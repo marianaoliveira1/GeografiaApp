@@ -89,7 +89,7 @@ class LoginPage extends StatelessWidget {
                     style: GoogleFonts.outfit(color: DefaultColors.white, fontSize: 16, fontWeight: FontWeight.w600),
                   ),
                 ),
-              )
+              ), 
             ],
           ),
         ),

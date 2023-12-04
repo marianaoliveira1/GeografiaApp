@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:geografia/pages/introducao_quiz.dart';
 import 'package:geografia/utils/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -8,6 +9,14 @@ class DefaultCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => IntroducaoQuiz(),
+          ),
+        );
+      },
       child: Container(
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(

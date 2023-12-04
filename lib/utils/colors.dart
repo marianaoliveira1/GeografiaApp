@@ -11,6 +11,6 @@ class DefaultColors {
   static Color primaryBlue = const Color(0xff2373ec);
   static Color primaryBackground = const Color(0xff5869ff);
   static Color cardBackground = const Color.fromARGB(255, 111, 189, 218);
-  static Color primaryGradiendBackground = Color(0xFFFCFCF8);
+  static Color primaryGradiendBackground = const Color(0xFFFCFCF8);
   static Color secondGradientBackground = const Color(0xFFECF7FC);
 }
