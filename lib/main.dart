@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:geografia/pages/home_page.dart';
-import 'package:geografia/pages/splash_page.dart';
+
+import 'package:geografia/pages/splash/splash_page.dart';
 
 void main() {
   runApp(const MyApp());

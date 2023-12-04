@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:geografia/utils/colors.dart';
 import 'package:geografia/widgets/default_gradiendt_brackground.dart';
 import 'package:geografia/widgets/default_card.dart';
-import 'package:geografia/widgets/home_app_bar.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:geografia/pages/home/widgtes/home_app_bar.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

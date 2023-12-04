@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:geografia/pages/introducao_quiz.dart';
+import 'package:geografia/pages/quiz/introducao_quiz.dart';
 import 'package:geografia/utils/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 

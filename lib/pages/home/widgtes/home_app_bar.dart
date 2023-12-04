@@ -28,7 +28,7 @@ class HomeAppBar extends StatelessWidget {
             ],
           ),
           Image.asset(
-            "assets/icons/tucano.png",
+            "assets/icons/perfil/tucano.png",
             height: 60,
           )
         ],
