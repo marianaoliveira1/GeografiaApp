@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:geografia/pages/login_page.dart';
 import 'package:geografia/utils/colors.dart';
 import 'package:geografia/widgets/default_input_text.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -9,7 +10,7 @@ class RegisterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: DefaultColors.grayBackground,
+      backgroundColor: DefaultColors.white,
       body: Padding(
         padding: const EdgeInsets.all(40.0),
         child: Center(
@@ -24,10 +25,7 @@ class RegisterPage extends StatelessWidget {
               const SizedBox(
                 height: 30,
               ),
-              Text(
-                'Cadastre-se',
-                style: GoogleFonts.poppins(color: DefaultColors.white, fontSize: 24),
-              ),
+              Text('Cadastre-se', style: GoogleFonts.outfit(color: DefaultColors.gray, fontSize: 24)),
               const SizedBox(
                 height: 50,
               ),
@@ -52,11 +50,21 @@ class RegisterPage extends StatelessWidget {
                 children: [
                   Text(
                     'Já possui uma conta? ',
-                    style: GoogleFonts.poppins(color: DefaultColors.gray100, fontSize: 12),
+                    style: GoogleFonts.outfit(color: DefaultColors.gray, fontSize: 12),
                   ),
-                  Text(
-                    'Entrar',
-                    style: GoogleFonts.poppins(color: DefaultColors.white, fontSize: 12),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => LoginPage(),
+                        ),
+                      );
+                    },
+                    child: Text(
+                      'Entrar',
+                      style: GoogleFonts.outfit(color: DefaultColors.gray, fontSize: 12, fontWeight: FontWeight.bold),
+                    ),
                   ),
                 ],
               ),
@@ -65,7 +73,7 @@ class RegisterPage extends StatelessWidget {
               ),
               Container(
                 decoration: BoxDecoration(
-                  color: DefaultColors.white,
+                  color: DefaultColors.primaryBackground,
                   borderRadius: BorderRadius.circular(14),
                 ),
                 width: double.infinity,
@@ -74,7 +82,7 @@ class RegisterPage extends StatelessWidget {
                   child: Text(
                     'Entrar',
                     textAlign: TextAlign.center,
-                    style: GoogleFonts.poppins(color: DefaultColors.back, fontSize: 16, fontWeight: FontWeight.w600),
+                    style: GoogleFonts.outfit(color: DefaultColors.white, fontSize: 16, fontWeight: FontWeight.w600),
                   ),
                 ),
               )

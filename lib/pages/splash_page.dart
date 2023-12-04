@@ -21,7 +21,7 @@ class _SpashPageState extends State<SpashPage> {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => RegisterPage(),
+          builder: (context) => LoginPage(),
         ),
       );
     });
@@ -33,8 +33,7 @@ class _SpashPageState extends State<SpashPage> {
       color: DefaultColors.white,
       child: Center(
         child: Image.asset(
-          "assets/brazil-page.png",
-          height: 150,
+          "assets/images/brazil.jpg",
         ),
       ),
     );
