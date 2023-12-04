@@ -14,12 +14,16 @@ class DefaultInputText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(color: DefaultColors.white, borderRadius: BorderRadius.circular(14), boxShadow: [
-        BoxShadow(
-          color: DefaultColors.gray,
-          blurRadius: 1,
-        )
-      ]),
+      decoration: BoxDecoration(
+        color: DefaultColors.white,
+        borderRadius: BorderRadius.circular(14),
+        boxShadow: [
+          BoxShadow(
+            color: DefaultColors.gray,
+            blurRadius: 1,
+          ),
+        ],
+      ),
       child: TextField(
         style: TextStyle(color: DefaultColors.gray),
         decoration: InputDecoration(

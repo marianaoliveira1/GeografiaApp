@@ -10,4 +10,7 @@ class DefaultColors {
   static Color grayTitleInput = const Color(0xFF8F8C8C);
   static Color primaryBlue = const Color(0xff2373ec);
   static Color primaryBackground = const Color(0xff5869ff);
+  static Color cardBackground = const Color.fromARGB(255, 111, 189, 218);
+  static Color primaryGradiendBackground = Color(0xFFFCFCF8);
+  static Color secondGradientBackground = const Color(0xFFECF7FC);
 }

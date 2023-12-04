@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import 'package:geografia/pages/login_page.dart';
-import 'package:geografia/pages/register_page.dart';
 import 'package:geografia/utils/colors.dart';
 
 class SpashPage extends StatefulWidget {
