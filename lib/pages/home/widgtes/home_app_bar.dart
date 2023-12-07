@@ -10,30 +10,23 @@ class HomeAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.only(left: 30.w, right: 30.w, top: 20.h),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                "Oi,",
-                style: GoogleFonts.outfit(color: DefaultColors.gray100, fontSize: 18.sp, fontWeight: FontWeight.w400),
-              ),
-              Text(
-                "Mariana",
-                style: GoogleFonts.outfit(color: DefaultColors.gray100, fontSize: 18.sp, fontWeight: FontWeight.w500),
-              ),
-            ],
-          ),
-          Image.asset(
-            "assets/icons/perfil/arara.png",
-            height: 60.h,
-          )
-        ],
-      ),
+    return Column(
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Image.asset(
+              "assets/icons/perfil/arara.png",
+              height: 43.h,
+            ),
+            Icon(
+              Icons.search,
+              size: 32.h,
+              color: Colors.grey[600],
+            ),
+          ],
+        ),
+      ],
     );
   }
 }
