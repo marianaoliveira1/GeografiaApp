@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:geografia/pages/register/register_page.dart';
 import 'package:geografia/utils/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -15,7 +16,7 @@ class ButtonCadastrar extends StatelessWidget {
       children: [
         Text(
           'Ainda não possui uma conta? ',
-          style: GoogleFonts.outfit(color: DefaultColors.gray, fontSize: 12),
+          style: GoogleFonts.outfit(color: DefaultColors.gray, fontSize: 12.sp),
         ),
         GestureDetector(
           onTap: () {
@@ -28,7 +29,7 @@ class ButtonCadastrar extends StatelessWidget {
           },
           child: Text(
             'Cadastre-se  ',
-            style: GoogleFonts.outfit(color: DefaultColors.gray, fontSize: 12, fontWeight: FontWeight.bold),
+            style: GoogleFonts.outfit(color: DefaultColors.gray, fontSize: 12.sp, fontWeight: FontWeight.bold),
           ),
         ),
       ],

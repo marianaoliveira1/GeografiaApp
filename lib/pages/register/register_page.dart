@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:geografia/pages/register/widgtes/button_ja_possui_conta.dart';
 import 'package:geografia/pages/register/widgtes/button_se_cadastrar.dart';
@@ -22,34 +23,34 @@ class RegisterPage extends StatelessWidget {
             children: [
               Image.asset(
                 'assets/icons/palmeira.png',
-                height: 150,
+                height: 150.h,
               ),
-              const SizedBox(
-                height: 30,
+              SizedBox(
+                height: 30.h,
               ),
-              const DefaultTituloH1(titulo: 'Cadastre-se'),
-              const SizedBox(
-                height: 50,
+              DefaultTituloH1(titulo: 'Cadastre-se'),
+              SizedBox(
+                height: 50.h,
               ),
               const DefaultInputText(hintText: 'Nome', icon: Icons.person),
-              const SizedBox(
-                height: 20,
+              SizedBox(
+                height: 20.h,
               ),
               const DefaultInputText(hintText: 'Email', icon: Icons.email),
-              const SizedBox(
-                height: 20,
+              SizedBox(
+                height: 20.h,
               ),
               const DefaultInputText(hintText: 'Senha', icon: Icons.lock),
-              const SizedBox(
-                height: 20,
+              SizedBox(
+                height: 20.h,
               ),
               const DefaultInputText(hintText: 'Confirmar senha', icon: Icons.lock),
-              const SizedBox(
-                height: 20,
+              SizedBox(
+                height: 20.h,
               ),
               ButtonJaPssuiConta(),
-              const SizedBox(
-                height: 50,
+              SizedBox(
+                height: 50.h,
               ),
               ButtonSeCadastrar()
             ],

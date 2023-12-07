@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:geografia/pages/home/home_page.dart';
 import 'package:geografia/utils/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -16,7 +17,7 @@ class ButtonEntrar extends StatelessWidget {
         borderRadius: BorderRadius.circular(14),
       ),
       width: double.infinity,
-      padding: const EdgeInsets.only(bottom: 10, top: 10),
+      padding: EdgeInsets.only(bottom: 10.h, top: 10.h),
       child: InkWell(
         onTap: () {
           Navigator.push(
@@ -29,7 +30,7 @@ class ButtonEntrar extends StatelessWidget {
         child: Text(
           'Entrar',
           textAlign: TextAlign.center,
-          style: GoogleFonts.outfit(color: DefaultColors.white, fontSize: 16, fontWeight: FontWeight.w600),
+          style: GoogleFonts.outfit(color: DefaultColors.white, fontSize: 16.sp, fontWeight: FontWeight.w600),
         ),
       ),
     );

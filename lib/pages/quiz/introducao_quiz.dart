@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:geografia/utils/colors.dart';
 import 'package:geografia/widgets/default_gradiendt_brackground.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -32,26 +33,26 @@ class _IntroducaoQuizState extends State<IntroducaoQuiz> {
             children: [
               Text(
                 "Capitais do Brasil",
-                style: GoogleFonts.outfit(color: DefaultColors.gray100, fontSize: 18, fontWeight: FontWeight.w500),
+                style: GoogleFonts.outfit(color: DefaultColors.gray100, fontSize: 18.sp, fontWeight: FontWeight.w500),
               ),
               SizedBox(
-                height: 20,
+                height: 20.h,
               ),
               Text(
                 "O Brasil é um país cheio de encantos, cores e diversidade, e suas capitais desempenham um papel especial nessa grande nação. Cada estado brasileiro tem uma capital que serve como centro político e cultural, contribuindo para a riqueza histórica e geográfica do país. Vamos explorar juntos algumas curiosidades sobre essas capitais por meio de perguntas divertidas!",
-                style: GoogleFonts.outfit(color: DefaultColors.gray100, fontSize: 18, fontWeight: FontWeight.w400),
+                style: GoogleFonts.outfit(color: DefaultColors.gray100, fontSize: 18.sp, fontWeight: FontWeight.w400),
               ),
               Expanded(child: Container()),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Container(
-                    margin: EdgeInsets.all(12),
+                    margin: EdgeInsets.all(12.h),
                     decoration: BoxDecoration(
                       color: DefaultColors.primaryBackground,
-                      borderRadius: BorderRadius.circular(14),
+                      borderRadius: BorderRadius.circular(14.r),
                     ),
-                    padding: const EdgeInsets.only(bottom: 15, top: 15, right: 15, left: 15),
+                    padding: EdgeInsets.only(bottom: 15.h, top: 15.h, right: 15.w, left: 15.w),
                     child: InkWell(
                       onTap: () {},
                       child: Row(
@@ -59,10 +60,10 @@ class _IntroducaoQuizState extends State<IntroducaoQuiz> {
                           Text(
                             'Ir para o quiz',
                             textAlign: TextAlign.center,
-                            style: GoogleFonts.outfit(color: DefaultColors.white, fontSize: 16, fontWeight: FontWeight.w500),
+                            style: GoogleFonts.outfit(color: DefaultColors.white, fontSize: 16.sp, fontWeight: FontWeight.w500),
                           ),
                           SizedBox(
-                            width: 5,
+                            width: 5.w,
                           ),
                           Icon(
                             Icons.arrow_right_alt,

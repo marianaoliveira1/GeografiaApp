@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:geografia/utils/colors.dart';
 import 'package:geografia/widgets/default_gradiendt_brackground.dart';
 import 'package:geografia/widgets/default_card.dart';
@@ -24,7 +25,12 @@ class _HomePageState extends State<HomePage> {
               children: [
                 HomeAppBar(),
                 SizedBox(
-                  height: 20,
+                  height: 20.h,
+                ),
+                Container(
+                  margin: EdgeInsets.only(left: 30.w, right: 30.w, top: 20.h),
+                  height: 200,
+                  child: Stack(children: []),
                 ),
                 DefaultCard(),
               ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:geografia/utils/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -16,7 +17,7 @@ class DefaultInputText extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: DefaultColors.white,
-        borderRadius: BorderRadius.circular(14),
+        borderRadius: BorderRadius.circular(14.h),
         boxShadow: [
           BoxShadow(
             color: DefaultColors.gray,

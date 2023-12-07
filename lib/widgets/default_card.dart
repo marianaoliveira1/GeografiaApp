@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:geografia/pages/quiz/introducao_quiz.dart';
 import 'package:geografia/utils/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -21,11 +22,11 @@ class DefaultCard extends StatelessWidget {
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
           color: DefaultColors.white,
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(16.h),
           boxShadow: [
             BoxShadow(
               color: DefaultColors.gray,
-              blurRadius: 1.3,
+              blurRadius: 1.3.r,
             )
           ],
         ),
@@ -33,10 +34,10 @@ class DefaultCard extends StatelessWidget {
           children: [
             Image.asset(
               "assets/icons/brazil.png",
-              height: 50,
+              height: 50.h,
             ),
-            const SizedBox(
-              height: 5,
+            SizedBox(
+              height: 5.h,
             ),
             Text(
               'Capitas do Brasil',

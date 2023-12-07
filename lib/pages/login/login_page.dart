@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:geografia/pages/login/widgtes/button_cadastrar.dart';
 import 'package:geografia/pages/login/widgtes/button_entrar.dart';
@@ -15,7 +16,7 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: DefaultColors.white,
       body: Padding(
-        padding: const EdgeInsets.all(40.0),
+        padding: EdgeInsets.all(40.0.h),
         child: Center(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -25,24 +26,24 @@ class LoginPage extends StatelessWidget {
                 'assets/icons/parrot.png',
                 height: 150,
               ),
-              const SizedBox(
-                height: 50,
+              SizedBox(
+                height: 50.h,
               ),
               const DefaultTituloH1(titulo: 'Bem-vindo de volta'),
-              const SizedBox(
-                height: 40,
+              SizedBox(
+                height: 40.h,
               ),
               const DefaultInputText(hintText: 'Email', icon: Icons.email),
               const SizedBox(
                 height: 20,
               ),
               const DefaultInputText(hintText: 'Senha', icon: Icons.lock),
-              const SizedBox(
-                height: 15,
+              SizedBox(
+                height: 15.h,
               ),
               ButtonCadastrar(),
-              const SizedBox(
-                height: 80,
+              SizedBox(
+                height: 80.h,
               ),
               ButtonEntrar(),
             ],
