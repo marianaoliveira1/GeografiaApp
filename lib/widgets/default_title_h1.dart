@@ -12,7 +12,7 @@ class DefaultTituloH1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       titulo,
-      style: GoogleFonts.outfit(color: DefaultColors.gray, fontSize: 24.sp),
+      style: GoogleFonts.outfit(color: DefaultColors.title, fontSize: 24.sp),
     ).animate().fade(duration: 1500.ms).slideY();
   }
 }

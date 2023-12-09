@@ -7,9 +7,11 @@ import 'package:google_fonts/google_fonts.dart';
 
 class DefaultButton extends StatelessWidget {
   final String text;
-  const DefaultButton({
+  void Function() onTap;
+  DefaultButton({
     super.key,
     required this.text,
+    required this.onTap,
   });
 
   @override
@@ -22,14 +24,7 @@ class DefaultButton extends StatelessWidget {
       width: double.infinity,
       padding: EdgeInsets.only(bottom: 10.h, top: 10.h),
       child: InkWell(
-        onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => HomePage(),
-            ),
-          );
-        },
+        onTap: onTap,
         child: Text(
           text,
           textAlign: TextAlign.center,

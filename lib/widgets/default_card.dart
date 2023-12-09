@@ -25,7 +25,7 @@ class DefaultCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(16.h),
           boxShadow: [
             BoxShadow(
-              color: DefaultColors.gray,
+              color: DefaultColors.title,
               blurRadius: 1.3.r,
             )
           ],

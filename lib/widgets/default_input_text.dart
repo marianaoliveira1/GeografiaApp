@@ -21,13 +21,13 @@ class DefaultInputText extends StatelessWidget {
         borderRadius: BorderRadius.circular(14.h),
         boxShadow: [
           BoxShadow(
-            color: DefaultColors.gray,
+            color: DefaultColors.title,
             blurRadius: 1,
           ),
         ],
       ),
       child: TextField(
-        style: TextStyle(color: DefaultColors.gray),
+        style: TextStyle(color: DefaultColors.title),
         decoration: InputDecoration(
           hintText: hintText,
           hintStyle: GoogleFonts.outfit(color: DefaultColors.grayBackgroundInput),

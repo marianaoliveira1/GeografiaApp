@@ -14,7 +14,7 @@ class ButtonJaPssuiConta extends StatelessWidget {
       children: [
         Text(
           'Já possui uma conta? ',
-          style: GoogleFonts.outfit(color: DefaultColors.gray, fontSize: 12),
+          style: GoogleFonts.outfit(color: DefaultColors.title, fontSize: 12),
         ),
         GestureDetector(
           onTap: () {
@@ -22,7 +22,7 @@ class ButtonJaPssuiConta extends StatelessWidget {
           },
           child: Text(
             'Entrar',
-            style: GoogleFonts.outfit(color: DefaultColors.gray, fontSize: 12, fontWeight: FontWeight.bold),
+            style: GoogleFonts.outfit(color: DefaultColors.title, fontSize: 12, fontWeight: FontWeight.bold),
           ),
         ),
       ],

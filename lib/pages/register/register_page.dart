@@ -16,43 +16,62 @@ class RegisterPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: DefaultColors.white,
       body: Padding(
-        padding: const EdgeInsets.all(40.0),
-        child: Center(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const DefaultImage(image: 'assets/icons/palmeira.png'),
-              SizedBox(
-                height: 30.h,
-              ),
-              const DefaultTituloH1(titulo: 'Cadastre-se'),
-              SizedBox(
-                height: 50.h,
-              ),
-              const DefaultInputText(hintText: 'Nome', icon: Icons.person),
-              SizedBox(
-                height: 20.h,
-              ),
-              const DefaultInputText(hintText: 'Email', icon: Icons.email),
-              SizedBox(
-                height: 20.h,
-              ),
-              const DefaultInputText(hintText: 'Senha', icon: Icons.lock),
-              SizedBox(
-                height: 20.h,
-              ),
-              const DefaultInputText(hintText: 'Confirmar senha', icon: Icons.lock),
-              SizedBox(
-                height: 20.h,
-              ),
-              ButtonJaPssuiConta(),
-              SizedBox(
-                height: 50.h,
-              ),
-              DefaultButton(text: 'Entrar'),
-            ],
-          ),
+        padding: EdgeInsets.all(40.0.h),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const DefaultImage(
+              image: 'assets/icons/palmeira.png',
+            ),
+            SizedBox(
+              height: 30.h,
+            ),
+            const DefaultTituloH1(
+              titulo: 'Vamos se cadastrar?',
+            ),
+            SizedBox(
+              height: 50.h,
+            ),
+            const DefaultInputText(
+              hintText: 'Nome',
+              icon: Icons.person,
+            ),
+            SizedBox(
+              height: 20.h,
+            ),
+            const DefaultInputText(
+              hintText: 'Email',
+              icon: Icons.email,
+            ),
+            SizedBox(
+              height: 20.h,
+            ),
+            const DefaultInputText(
+              hintText: 'Senha',
+              icon: Icons.lock,
+            ),
+            SizedBox(
+              height: 20.h,
+            ),
+            const DefaultInputText(
+              hintText: 'Confirme a senha',
+              icon: Icons.lock,
+            ),
+            SizedBox(
+              height: 20.h,
+            ),
+            ButtonJaPssuiConta(),
+            SizedBox(
+              height: 50.h,
+            ),
+            DefaultButton(
+              text: 'Próximo',
+              onTap: () {
+                Navigator.pushNamed(context, '/avatar');
+              },
+            ),
+          ],
         ),
       ),
     );

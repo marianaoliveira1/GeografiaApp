@@ -18,34 +18,45 @@ class LoginPage extends StatelessWidget {
       backgroundColor: DefaultColors.white,
       body: Padding(
         padding: EdgeInsets.all(40.0.h),
-        child: Center(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const DefaultImage(image: 'assets/icons/parrot.png'),
-              SizedBox(
-                height: 50.h,
-              ),
-              const DefaultTituloH1(titulo: 'Bem-vindo de volta'),
-              SizedBox(
-                height: 40.h,
-              ),
-              const DefaultInputText(hintText: 'Email', icon: Icons.email),
-              const SizedBox(
-                height: 20,
-              ),
-              const DefaultInputText(hintText: 'Senha', icon: Icons.lock),
-              SizedBox(
-                height: 15.h,
-              ),
-              const ButtonCadastrar(),
-              SizedBox(
-                height: 80.h,
-              ),
-              const DefaultButton(text: 'Entrar'),
-            ],
-          ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const DefaultImage(
+              image: 'assets/icons/parrot.png',
+            ),
+            SizedBox(
+              height: 50.h,
+            ),
+            const DefaultTituloH1(
+              titulo: 'Bem-vindo de volta',
+            ),
+            SizedBox(
+              height: 40.h,
+            ),
+            const DefaultInputText(
+              hintText: 'Email',
+              icon: Icons.email,
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            const DefaultInputText(
+              hintText: 'Senha',
+              icon: Icons.lock,
+            ),
+            SizedBox(
+              height: 15.h,
+            ),
+            const ButtonCadastrar(),
+            SizedBox(
+              height: 80.h,
+            ),
+            DefaultButton(
+              text: 'Entrar',
+              onTap: () {},
+            ),
+          ],
         ),
       ),
     );

@@ -16,7 +16,7 @@ class ButtonCadastrar extends StatelessWidget {
       children: [
         Text(
           'Ainda não possui uma conta? ',
-          style: GoogleFonts.outfit(color: DefaultColors.gray, fontSize: 12.sp),
+          style: GoogleFonts.outfit(color: DefaultColors.title, fontSize: 12.sp),
         ).animate().fade(duration: 1500.ms).slideY(),
         GestureDetector(
           onTap: () {
@@ -24,7 +24,7 @@ class ButtonCadastrar extends StatelessWidget {
           },
           child: Text(
             'Cadastre-se  ',
-            style: GoogleFonts.outfit(color: DefaultColors.gray, fontSize: 12.sp, fontWeight: FontWeight.bold),
+            style: GoogleFonts.outfit(color: DefaultColors.title, fontSize: 12.sp, fontWeight: FontWeight.bold),
           ).animate().fade(duration: 1500.ms).slideY(),
         ),
       ],

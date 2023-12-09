@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DefaultColors {
-  static Color gray = const Color(0xff171717);
+  static Color title = const Color(0xff171717);
   static Color grayBackground = const Color(0xff171717);
   static Color grayBackgroundInput = const Color(0xff242424);
   static Color back = const Color(0xff14171b);
