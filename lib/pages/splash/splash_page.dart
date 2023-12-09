@@ -20,7 +20,7 @@ class _SpashPageState extends State<SpashPage> {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => LoginPage(),
+          builder: (context) => const LoginPage(),
         ),
       );
     });

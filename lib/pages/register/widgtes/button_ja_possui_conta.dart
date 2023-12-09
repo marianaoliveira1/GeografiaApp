@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:geografia/pages/login/login_page.dart';
 import 'package:geografia/utils/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -19,12 +18,7 @@ class ButtonJaPssuiConta extends StatelessWidget {
         ),
         GestureDetector(
           onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => LoginPage(),
-              ),
-            );
+            Navigator.pushNamed(context, '/login');
           },
           child: Text(
             'Entrar',

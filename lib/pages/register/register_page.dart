@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:geografia/pages/register/widgtes/button_ja_possui_conta.dart';
-import 'package:geografia/pages/register/widgtes/button_se_cadastrar.dart';
 import 'package:geografia/utils/colors.dart';
+import 'package:geografia/widgets/default_button.dart';
+import 'package:geografia/widgets/default_image.dart';
 import 'package:geografia/widgets/default_input_text.dart';
 import 'package:geografia/widgets/default_title_h1.dart';
 
@@ -21,14 +22,11 @@ class RegisterPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset(
-                'assets/icons/palmeira.png',
-                height: 150.h,
-              ),
+              const DefaultImage(image: 'assets/icons/palmeira.png'),
               SizedBox(
                 height: 30.h,
               ),
-              DefaultTituloH1(titulo: 'Cadastre-se'),
+              const DefaultTituloH1(titulo: 'Cadastre-se'),
               SizedBox(
                 height: 50.h,
               ),
@@ -52,7 +50,7 @@ class RegisterPage extends StatelessWidget {
               SizedBox(
                 height: 50.h,
               ),
-              ButtonSeCadastrar()
+              DefaultButton(text: 'Entrar'),
             ],
           ),
         ),

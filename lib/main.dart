@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:geografia/pages/home/home_page.dart';
+import 'package:geografia/pages/login/login_page.dart';
+import 'package:geografia/pages/profile/perfil_page.dart';
+import 'package:geografia/pages/quiz/introducao_quiz.dart';
+import 'package:geografia/pages/register/register_page.dart';
 
 import 'package:geografia/pages/splash/splash_page.dart';
 
@@ -18,7 +23,14 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Geografia App',
         debugShowCheckedModeBanner: false,
-        home: SpashPage(),
+        routes: {
+          '/login': (context) => const LoginPage(),
+          '/register': (context) => const RegisterPage(),
+          '/home': (context) => const HomePage(),
+          '/profile': (context) => const ProfilePage(),
+          '/quiz': (context) => const IntroducaoQuiz(),
+        },
+        home: const SpashPage(),
       ),
     );
   }

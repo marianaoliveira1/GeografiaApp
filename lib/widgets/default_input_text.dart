@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:geografia/utils/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -37,6 +38,6 @@ class DefaultInputText extends StatelessWidget {
           border: InputBorder.none,
         ),
       ),
-    );
+    ).animate().fade(duration: 1500.ms).slideY();
   }
 }

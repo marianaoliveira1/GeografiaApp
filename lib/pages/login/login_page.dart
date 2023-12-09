@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:geografia/pages/login/widgtes/button_cadastrar.dart';
-import 'package:geografia/pages/login/widgtes/button_entrar.dart';
+import 'package:geografia/widgets/default_button.dart';
 
 import 'package:geografia/utils/colors.dart';
+import 'package:geografia/widgets/default_image.dart';
 import 'package:geografia/widgets/default_input_text.dart';
 import 'package:geografia/widgets/default_title_h1.dart';
 
@@ -22,10 +23,7 @@ class LoginPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset(
-                'assets/icons/parrot.png',
-                height: 150,
-              ),
+              const DefaultImage(image: 'assets/icons/parrot.png'),
               SizedBox(
                 height: 50.h,
               ),
@@ -41,11 +39,11 @@ class LoginPage extends StatelessWidget {
               SizedBox(
                 height: 15.h,
               ),
-              ButtonCadastrar(),
+              const ButtonCadastrar(),
               SizedBox(
                 height: 80.h,
               ),
-              ButtonEntrar(),
+              const DefaultButton(text: 'Entrar'),
             ],
           ),
         ),
