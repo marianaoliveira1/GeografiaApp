@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "278696694583",
+    "project_id": "geografiaapp",
+    "storage_bucket": "geografiaapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278696694583:android:ab5e9a11045c3e291c40b2",
+        "android_client_info": {
+          "package_name": "com.example.geografia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtRWH68f_p6IzL72ts9IFmnXV6_mYpgag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
