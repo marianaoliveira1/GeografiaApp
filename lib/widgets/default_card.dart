@@ -19,7 +19,7 @@ class DefaultCard extends StatelessWidget {
         );
       },
       child: Container(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.all(14),
         decoration: BoxDecoration(
           color: DefaultColors.white,
           borderRadius: BorderRadius.circular(16.h),
@@ -31,10 +31,12 @@ class DefaultCard extends StatelessWidget {
           ],
         ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
               "assets/icons/brazil.png",
-              height: 50.h,
+              height: 40.h,
             ),
             SizedBox(
               height: 5.h,
@@ -42,6 +44,7 @@ class DefaultCard extends StatelessWidget {
             Text(
               'Capitas do Brasil',
               style: GoogleFonts.outfit(
+                fontSize: 10.sp,
                 fontWeight: FontWeight.w500,
                 color: DefaultColors.grayBackground,
               ),

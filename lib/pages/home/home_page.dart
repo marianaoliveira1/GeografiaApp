@@ -89,7 +89,33 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ],
                   ),
-                  const DefaultCard(),
+                  SizedBox(
+                    height: 20.h,
+                  ),
+                  LayoutBuilder(builder: (context, c) {
+                    return SizedBox(
+                      width: c.maxWidth,
+                      height: c.maxWidth * 0.6,
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: DefaultCard(),
+                          ),
+                          Expanded(
+                            child: Column(
+                              children: [
+                                DefaultCard(),
+                                SizedBox(
+                                  height: 12.h,
+                                ),
+                                DefaultCard(),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    );
+                  })
                 ],
               ),
             ),
