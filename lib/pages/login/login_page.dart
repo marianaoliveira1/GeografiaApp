@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:geografia/pages/login/widgtes/button_cadastrar.dart';
+
 import 'package:geografia/widgets/default_button.dart';
 
 import 'package:geografia/utils/colors.dart';
@@ -9,9 +10,16 @@ import 'package:geografia/widgets/default_image.dart';
 import 'package:geografia/widgets/default_input_text.dart';
 import 'package:geografia/widgets/default_title_h1.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+class LoginPage extends StatefulWidget {
+  final void Function()? onTap;
 
+  const LoginPage({super.key, this.onTap});
+
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,7 +56,7 @@ class LoginPage extends StatelessWidget {
             SizedBox(
               height: 15.h,
             ),
-            const ButtonCadastrar(),
+            ButtonCadastrar(widget: widget),
             SizedBox(
               height: 80.h,
             ),

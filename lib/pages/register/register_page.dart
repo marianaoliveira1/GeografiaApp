@@ -1,16 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import 'package:geografia/pages/register/widgtes/button_ja_possui_conta.dart';
+
 import 'package:geografia/utils/colors.dart';
 import 'package:geografia/widgets/default_button.dart';
 import 'package:geografia/widgets/default_image.dart';
 import 'package:geografia/widgets/default_input_text.dart';
 import 'package:geografia/widgets/default_title_h1.dart';
 
-class RegisterPage extends StatelessWidget {
-  const RegisterPage({super.key});
+class RegisterPage extends StatefulWidget {
+  final void Function()? onTap;
 
+  const RegisterPage({super.key, this.onTap});
+
+  @override
+  State<RegisterPage> createState() => _RegisterPageState();
+}
+
+class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -61,7 +68,7 @@ class RegisterPage extends StatelessWidget {
             SizedBox(
               height: 20.h,
             ),
-            const ButtonJaPssuiConta(),
+            ButtonJaPossuiConta(widget: widget),
             SizedBox(
               height: 50.h,
             ),
