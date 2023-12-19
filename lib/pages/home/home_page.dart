@@ -98,17 +98,17 @@ class _HomePageState extends State<HomePage> {
                       height: c.maxWidth * 0.6,
                       child: Row(
                         children: [
-                          Expanded(
+                          const Expanded(
                             child: DefaultCard(),
                           ),
                           Expanded(
                             child: Column(
                               children: [
-                                DefaultCard(),
+                                const DefaultCard(),
                                 SizedBox(
                                   height: 12.h,
                                 ),
-                                DefaultCard(),
+                                const DefaultCard(),
                               ],
                             ),
                           ),
