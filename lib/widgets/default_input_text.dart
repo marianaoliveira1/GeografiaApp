@@ -7,10 +7,14 @@ import 'package:google_fonts/google_fonts.dart';
 class DefaultInputText extends StatelessWidget {
   final String hintText;
   final IconData icon;
+  final TextEditingController? controller;
+  final bool obscureText;
   const DefaultInputText({
     super.key,
     required this.hintText,
     required this.icon,
+    this.controller,
+    required this.obscureText,
   });
 
   @override
@@ -27,16 +31,19 @@ class DefaultInputText extends StatelessWidget {
         ],
       ),
       child: TextField(
+        controller: controller,
         style: TextStyle(color: DefaultColors.title),
         decoration: InputDecoration(
           hintText: hintText,
-          hintStyle: GoogleFonts.outfit(color: DefaultColors.grayBackgroundInput),
+          hintStyle:
+              GoogleFonts.outfit(color: DefaultColors.grayBackgroundInput),
           prefixIcon: Icon(
             icon,
             color: DefaultColors.grayBackgroundInput,
           ),
           border: InputBorder.none,
         ),
+        obscureText: obscureText,
       ),
     ).animate().fade(duration: 1500.ms).slideY();
   }

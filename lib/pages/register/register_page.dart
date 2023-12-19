@@ -18,67 +18,86 @@ class RegisterPage extends StatefulWidget {
 }
 
 class _RegisterPageState extends State<RegisterPage> {
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
+  final TextEditingController nameController = TextEditingController();
+  final TextEditingController confirmPasswordController =
+      TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: DefaultColors.white,
       body: Padding(
         padding: EdgeInsets.all(40.0.h),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const DefaultImage(
-              image: 'assets/icons/palmeira.png',
-            ),
-            SizedBox(
-              height: 30.h,
-            ),
-            const DefaultTituloH1(
-              titulo: 'Vamos se cadastrar?',
-            ),
-            SizedBox(
-              height: 50.h,
-            ),
-            const DefaultInputText(
-              hintText: 'Nome',
-              icon: Icons.person,
-            ),
-            SizedBox(
-              height: 20.h,
-            ),
-            const DefaultInputText(
-              hintText: 'Email',
-              icon: Icons.email,
-            ),
-            SizedBox(
-              height: 20.h,
-            ),
-            const DefaultInputText(
-              hintText: 'Senha',
-              icon: Icons.lock,
-            ),
-            SizedBox(
-              height: 20.h,
-            ),
-            const DefaultInputText(
-              hintText: 'Confirme a senha',
-              icon: Icons.lock,
-            ),
-            SizedBox(
-              height: 20.h,
-            ),
-            ButtonJaPossuiConta(widget: widget),
-            SizedBox(
-              height: 50.h,
-            ),
-            DefaultButton(
-              text: 'Entrar',
-              onTap: () {
-                Navigator.pushNamed(context, '/home');
-              },
-            ),
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(
+                height: 40.h,
+              ),
+              const DefaultImage(
+                image: 'assets/icons/palmeira.png',
+              ),
+              SizedBox(
+                height: 30.h,
+              ),
+              const DefaultTituloH1(
+                titulo: 'Vamos se cadastrar?',
+              ),
+              SizedBox(
+                height: 50.h,
+              ),
+              DefaultInputText(
+                controller: nameController,
+                obscureText: false,
+                hintText: 'Nome',
+                icon: Icons.person,
+              ),
+              SizedBox(
+                height: 20.h,
+              ),
+              DefaultInputText(
+                controller: emailController,
+                obscureText: false,
+                hintText: 'Email',
+                icon: Icons.email,
+              ),
+              SizedBox(
+                height: 20.h,
+              ),
+              DefaultInputText(
+                controller: passwordController,
+                obscureText: true,
+                hintText: 'Senha',
+                icon: Icons.lock,
+              ),
+              SizedBox(
+                height: 20.h,
+              ),
+              DefaultInputText(
+                controller: confirmPasswordController,
+                obscureText: true,
+                hintText: 'Confirme a senha',
+                icon: Icons.lock,
+              ),
+              SizedBox(
+                height: 20.h,
+              ),
+              ButtonJaPossuiConta(widget: widget),
+              SizedBox(
+                height: 50.h,
+              ),
+              DefaultButton(
+                text: 'Entrar',
+                onTap: () {
+                  Navigator.pushNamed(context, '/home');
+                },
+              ),
+            ],
+          ),
         ),
       ),
     );

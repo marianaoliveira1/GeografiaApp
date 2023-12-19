@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:geografia/serve/auth_service.dart';
 import 'package:geografia/utils/colors.dart';
 import 'package:geografia/widgets/default_gradiendt_brackground.dart';
 import 'package:geografia/widgets/default_card.dart';
 import 'package:geografia/pages/home/widgtes/home_app_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -14,6 +16,11 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  void signOut() {
+    final authService = Provider.of<AuthService>(context, listen: false);
+    authService.signOut();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,6 +36,13 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   const HomeAppBar(),
+                  SizedBox(
+                    height: 15.h,
+                  ),
+                  IconButton(
+                    onPressed: signOut,
+                    icon: Icon(Icons.logout),
+                  ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
