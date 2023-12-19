@@ -1,16 +1,16 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, use_build_context_synchronously
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:geografia/pages/register/widgtes/button_ja_possui_conta.dart';
-import 'package:geografia/serve/auth_service.dart';
+import 'package:geografia/controller/auth_service.dart';
 
 import 'package:geografia/utils/colors.dart';
 import 'package:geografia/widgets/default_button.dart';
 import 'package:geografia/widgets/default_image.dart';
 import 'package:geografia/widgets/default_input_text.dart';
 import 'package:geografia/widgets/default_title_h1.dart';
-import 'package:provider/provider.dart';
+import 'package:get/get.dart';
 
 class RegisterPage extends StatefulWidget {
   final void Function()? onTap;
@@ -25,8 +25,7 @@ class _RegisterPageState extends State<RegisterPage> {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
   final TextEditingController nameController = TextEditingController();
-  final TextEditingController confirmPasswordController =
-      TextEditingController();
+  final TextEditingController confirmPasswordController = TextEditingController();
 
   void signUp() async {
     if (passwordController.text != confirmPasswordController.text) {
@@ -40,12 +39,18 @@ class _RegisterPageState extends State<RegisterPage> {
       return;
     }
 
-    final authService = Provider.of<AuthService>(context, listen: false);
+    final authService = Get.find<AuthController>();
+
+    // await authService.signUpWithEmailAndPassword(
+    //   emailController.text,
+    //   passwordController.text,
+    // );
 
     try {
       await authService.signUpWithEmailAndPassword(
         emailController.text,
         passwordController.text,
+        nameController.text,
       );
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(

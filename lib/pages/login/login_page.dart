@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:geografia/pages/login/widgtes/button_cadastrar.dart';
-import 'package:geografia/serve/auth_service.dart';
+import 'package:geografia/controller/auth_service.dart';
 
 import 'package:geografia/widgets/default_button.dart';
 
@@ -12,7 +12,7 @@ import 'package:geografia/utils/colors.dart';
 import 'package:geografia/widgets/default_image.dart';
 import 'package:geografia/widgets/default_input_text.dart';
 import 'package:geografia/widgets/default_title_h1.dart';
-import 'package:provider/provider.dart';
+import 'package:get/get.dart';
 
 class LoginPage extends StatefulWidget {
   final void Function()? onTap;
@@ -28,7 +28,7 @@ class _LoginPageState extends State<LoginPage> {
   final TextEditingController passwordController = TextEditingController();
 
   void signIn() async {
-    final authService = Provider.of<AuthService>(context, listen: false);
+    final authService = Get.find<AuthController>();
 
     try {
       await authService.signInWithEmailAndPassword(

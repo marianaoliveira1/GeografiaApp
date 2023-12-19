@@ -8,27 +8,26 @@ import 'package:geografia/pages/profile/perfil_page.dart';
 import 'package:geografia/pages/quiz/introducao_quiz.dart';
 
 import 'package:geografia/pages/splash/splash_page.dart';
-import 'package:geografia/serve/auth_service.dart';
-import 'package:provider/provider.dart';
+import 'package:geografia/controller/auth_service.dart';
+import 'package:get/get.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  runApp(ChangeNotifierProvider(
-    create: (context) => AuthService(),
-    child: const MyApp(),
-  ));
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
+    Get.put(AuthController());
+
     return ScreenUtilInit(
       designSize: const Size(380, 780),
       minTextAdapt: true,
       splitScreenMode: true,
-      child: MaterialApp(
+      child: GetMaterialApp(
         title: 'Geografia App',
         debugShowCheckedModeBanner: false,
         routes: {
