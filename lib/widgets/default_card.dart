@@ -14,7 +14,7 @@ class DefaultCard extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => IntroducaoQuiz(),
+            builder: (context) => const IntroducaoQuiz(),
           ),
         );
       },

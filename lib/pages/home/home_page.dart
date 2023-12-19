@@ -28,25 +28,31 @@ class _HomePageState extends State<HomePage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  HomeAppBar(),
+                  const HomeAppBar(),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Text(
                         "Oi, Mariana",
-                        style: GoogleFonts.outfit(color: DefaultColors.gray100, fontSize: 18.sp, fontWeight: FontWeight.w400),
+                        style: GoogleFonts.outfit(
+                            color: DefaultColors.gray100,
+                            fontSize: 18.sp,
+                            fontWeight: FontWeight.w400),
                       ),
                       Text(
                         "Divirta-se com um jogo",
-                        style: GoogleFonts.outfit(color: DefaultColors.gray100, fontSize: 18.sp, fontWeight: FontWeight.w500),
+                        style: GoogleFonts.outfit(
+                            color: DefaultColors.gray100,
+                            fontSize: 18.sp,
+                            fontWeight: FontWeight.w500),
                       ),
                     ],
                   ),
                   SizedBox(
                     height: 20.h,
                   ),
-                  DefaultCard(),
+                  const DefaultCard(),
                 ],
               ),
             ),

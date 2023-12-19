@@ -5,8 +5,6 @@ import 'package:geografia/pages/login/login_page.dart';
 import 'package:geografia/pages/profile/perfil_page.dart';
 import 'package:geografia/pages/quiz/introducao_quiz.dart';
 
-import 'package:geografia/pages/register/register_page.dart';
-
 import 'package:geografia/pages/splash/splash_page.dart';
 
 void main() {

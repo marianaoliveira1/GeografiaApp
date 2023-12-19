@@ -13,6 +13,7 @@ class SpashPage extends StatefulWidget {
 }
 
 class _SpashPageState extends State<SpashPage> {
+  @override
   void initState() {
     super.initState();
 

@@ -1,7 +1,9 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:geografia/pages/home/home_page.dart';
+
 import 'package:geografia/utils/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -28,7 +30,10 @@ class DefaultButton extends StatelessWidget {
         child: Text(
           text,
           textAlign: TextAlign.center,
-          style: GoogleFonts.outfit(color: DefaultColors.white, fontSize: 16.sp, fontWeight: FontWeight.w600),
+          style: GoogleFonts.outfit(
+              color: DefaultColors.white,
+              fontSize: 16.sp,
+              fontWeight: FontWeight.w600),
         ),
       ),
     ).animate().fade(duration: 1500.ms).slideY();
