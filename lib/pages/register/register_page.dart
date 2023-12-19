@@ -61,14 +61,14 @@ class RegisterPage extends StatelessWidget {
             SizedBox(
               height: 20.h,
             ),
-            ButtonJaPssuiConta(),
+            const ButtonJaPssuiConta(),
             SizedBox(
               height: 50.h,
             ),
             DefaultButton(
-              text: 'Próximo',
+              text: 'Entrar',
               onTap: () {
-                Navigator.pushNamed(context, '/avatar');
+                Navigator.pushNamed(context, '/home');
               },
             ),
           ],

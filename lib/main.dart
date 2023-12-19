@@ -4,7 +4,7 @@ import 'package:geografia/pages/home/home_page.dart';
 import 'package:geografia/pages/login/login_page.dart';
 import 'package:geografia/pages/profile/perfil_page.dart';
 import 'package:geografia/pages/quiz/introducao_quiz.dart';
-import 'package:geografia/pages/register/pages/escolha_avatar.dart';
+
 import 'package:geografia/pages/register/register_page.dart';
 
 import 'package:geografia/pages/splash/splash_page.dart';
@@ -26,8 +26,6 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         routes: {
           '/login': (context) => const LoginPage(),
-          '/register': (context) => const RegisterPage(),
-          '/avatar': (context) => const EscolhaSeuAvatar(),
           '/home': (context) => const HomePage(),
           '/profile': (context) => const ProfilePage(),
           '/quiz': (context) => const IntroducaoQuiz(),
