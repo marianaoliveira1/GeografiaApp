@@ -25,6 +25,14 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: DefaultColors.white,
+      drawer: Drawer(
+        backgroundColor: Colors.grey[900],
+        child: Column(
+          children: [
+            Icon(Icons.person),
+          ],
+        ),
+      ),
       body: SafeArea(
         child: Stack(
           children: [
@@ -35,18 +43,18 @@ class _HomePageState extends State<HomePage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  const HomeAppBar(),
+                  // const HomeAppBar(),
                   SizedBox(
                     height: 15.h,
-                  ),
-                  IconButton(
-                    onPressed: signOut,
-                    icon: Icon(Icons.logout),
                   ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
+                      IconButton(
+                        onPressed: signOut,
+                        icon: Icon(Icons.logout),
+                      ),
                       Text(
                         "Oi, Mariana",
                         style: GoogleFonts.outfit(
