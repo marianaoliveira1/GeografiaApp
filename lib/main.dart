@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
           '/home': (context) => const HomePage(),
           '/profile': (context) => const ProfilePage(),
           '/quiz': (context) => const IntroductionQuiz(),
-          '/quesoes': (context) => const QuestionsQuiz(),
+          '/questoes': (context) => const QuestionsQuiz(),
         },
         home: const SpashPage(),
       ),

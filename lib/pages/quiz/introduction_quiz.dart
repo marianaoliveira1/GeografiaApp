@@ -53,7 +53,9 @@ class _IntroductionQuizState extends State<IntroductionQuiz> {
                     ),
                     padding: EdgeInsets.only(bottom: 15.h, top: 15.h, right: 15.w, left: 15.w),
                     child: InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.pushNamed(context, '/questoes');
+                      },
                       child: Row(
                         children: [
                           Text(
