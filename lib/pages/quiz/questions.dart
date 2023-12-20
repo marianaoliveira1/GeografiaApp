@@ -110,38 +110,69 @@ class _QuestionsQuizState extends State<QuestionsQuiz> {
             CardQuestoes(),
             CardQuestoes(),
             CardQuestoes(),
-            Container(
-              margin: EdgeInsets.only(
-                bottom: 15.h,
-                top: 15.h,
-              ),
-              decoration: BoxDecoration(
-                color: DefaultColors.primaryBackground,
-                borderRadius: BorderRadius.circular(14.r),
-              ),
-              padding: EdgeInsets.only(
-                bottom: 15.h,
-                top: 15.h,
-                right: 15.w,
-                left: 15.w,
-              ),
-              child: InkWell(
-                onTap: () {
-                  Navigator.pushNamed(context, '/questoes');
-                },
-                child: Row(
-                  children: [
-                    Text(
-                      'Próxima questão',
-                      style: GoogleFonts.outfit(
-                        color: DefaultColors.white,
-                        fontSize: 16.sp,
-                        fontWeight: FontWeight.w500,
-                      ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  margin: EdgeInsets.only(
+                    bottom: 15.h,
+                    top: 15.h,
+                  ),
+                  decoration: BoxDecoration(
+                    color: DefaultColors.primaryBackground,
+                    borderRadius: BorderRadius.circular(14.r),
+                  ),
+                  padding: EdgeInsets.only(
+                    bottom: 15.h,
+                    top: 15.h,
+                    right: 15.w,
+                    left: 15.w,
+                  ),
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/questoes');
+                    },
+                    child: Row(
+                      children: [
+                        Icon(Icons.arrow_circle_left, color: DefaultColors.white),
+                      ],
                     ),
-                  ],
+                  ),
                 ),
-              ),
+                Container(
+                  margin: EdgeInsets.only(
+                    bottom: 15.h,
+                    top: 15.h,
+                  ),
+                  decoration: BoxDecoration(
+                    color: DefaultColors.primaryBackground,
+                    borderRadius: BorderRadius.circular(14.r),
+                  ),
+                  padding: EdgeInsets.only(
+                    bottom: 15.h,
+                    top: 15.h,
+                    right: 60.w,
+                    left: 75.w,
+                  ),
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/result');
+                    },
+                    child: Row(
+                      children: [
+                        Text(
+                          'Próxima questão',
+                          style: GoogleFonts.outfit(
+                            color: DefaultColors.white,
+                            fontSize: 16.sp,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),

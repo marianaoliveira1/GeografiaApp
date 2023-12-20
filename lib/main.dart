@@ -7,6 +7,7 @@ import 'package:geografia/pages/login/login_page.dart';
 import 'package:geografia/pages/profile/perfil_page.dart';
 import 'package:geografia/pages/quiz/introduction_quiz.dart';
 import 'package:geografia/pages/quiz/questions.dart';
+import 'package:geografia/pages/quiz/result_quiz.dart';
 
 import 'package:geografia/pages/splash/splash_page.dart';
 import 'package:geografia/controller/auth_service.dart';
@@ -37,6 +38,7 @@ class MyApp extends StatelessWidget {
           '/profile': (context) => const ProfilePage(),
           '/quiz': (context) => const IntroductionQuiz(),
           '/questoes': (context) => const QuestionsQuiz(),
+          '/result': (context) => const ResultQuiz(),
         },
         home: const SpashPage(),
       ),
