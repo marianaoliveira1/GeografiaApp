@@ -2,7 +2,6 @@
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
 
 class ModelQuiz {
   String enuncioado;
@@ -42,7 +41,7 @@ class ModelQuiz {
   factory ModelQuiz.fromMap(Map<String, dynamic> map) {
     return ModelQuiz(
       enuncioado: map['enuncioado'] as String,
-      alternativas: List<String>.from((map['alternativas'] as List<String>),
+      alternativas: List<String>.from((map['alternativas'] as List<dynamic>).map((e) => e as String)),
       alternativaCorretaIndex: map['alternativaCorretaIndex'] as int,
       imagemUrl: map['imagemUrl'] as String,
     );
@@ -60,19 +59,12 @@ class ModelQuiz {
   @override
   bool operator ==(covariant ModelQuiz other) {
     if (identical(this, other)) return true;
-  
-    return 
-      other.enuncioado == enuncioado &&
-      listEquals(other.alternativas, alternativas) &&
-      other.alternativaCorretaIndex == alternativaCorretaIndex &&
-      other.imagemUrl == imagemUrl;
+
+    return other.enuncioado == enuncioado && listEquals(other.alternativas, alternativas) && other.alternativaCorretaIndex == alternativaCorretaIndex && other.imagemUrl == imagemUrl;
   }
 
   @override
   int get hashCode {
-    return enuncioado.hashCode ^
-      alternativas.hashCode ^
-      alternativaCorretaIndex.hashCode ^
-      imagemUrl.hashCode;
+    return enuncioado.hashCode ^ alternativas.hashCode ^ alternativaCorretaIndex.hashCode ^ imagemUrl.hashCode;
   }
 }
