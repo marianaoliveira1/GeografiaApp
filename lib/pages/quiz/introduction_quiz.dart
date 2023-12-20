@@ -3,14 +3,14 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:geografia/utils/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class IntroducaoQuiz extends StatefulWidget {
-  const IntroducaoQuiz({super.key});
+class IntroductionQuiz extends StatefulWidget {
+  const IntroductionQuiz({super.key});
 
   @override
-  State<IntroducaoQuiz> createState() => _IntroducaoQuizState();
+  State<IntroductionQuiz> createState() => _IntroductionQuizState();
 }
 
-class _IntroducaoQuizState extends State<IntroducaoQuiz> {
+class _IntroductionQuizState extends State<IntroductionQuiz> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

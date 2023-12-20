@@ -5,7 +5,8 @@ import 'package:geografia/firebase_options.dart';
 import 'package:geografia/pages/home/home_page.dart';
 import 'package:geografia/pages/login/login_page.dart';
 import 'package:geografia/pages/profile/perfil_page.dart';
-import 'package:geografia/pages/quiz/introducao_quiz.dart';
+import 'package:geografia/pages/quiz/introduction_quiz.dart';
+import 'package:geografia/pages/quiz/questions.dart';
 
 import 'package:geografia/pages/splash/splash_page.dart';
 import 'package:geografia/controller/auth_service.dart';
@@ -34,7 +35,8 @@ class MyApp extends StatelessWidget {
           '/login': (context) => const LoginPage(),
           '/home': (context) => const HomePage(),
           '/profile': (context) => const ProfilePage(),
-          '/quiz': (context) => const IntroducaoQuiz(),
+          '/quiz': (context) => const IntroductionQuiz(),
+          '/quesoes': (context) => const QuestionsQuiz(),
         },
         home: const SpashPage(),
       ),
