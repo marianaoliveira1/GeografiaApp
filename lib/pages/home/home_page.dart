@@ -92,30 +92,40 @@ class _HomePageState extends State<HomePage> {
                   SizedBox(
                     height: 20.h,
                   ),
-                  LayoutBuilder(builder: (context, c) {
-                    return SizedBox(
-                      width: c.maxWidth,
-                      height: c.maxWidth * 0.6,
-                      child: Row(
-                        children: [
-                          const Expanded(
-                            child: DefaultCard(),
-                          ),
-                          Expanded(
-                            child: Column(
-                              children: [
-                                const DefaultCard(),
-                                SizedBox(
-                                  height: 12.h,
-                                ),
-                                const DefaultCard(),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    );
-                  })
+                  GridView.count(
+                    crossAxisCount: 2,
+                    childAspectRatio: 1.2,
+                    children: [
+                      DefaultCard(),
+                      DefaultCard(),
+                      DefaultCard(),
+                      DefaultCard(),
+                    ],
+                  ),
+                  // LayoutBuilder(builder: (context, c) {
+                  //   return SizedBox(
+                  //     width: c.maxWidth,
+                  //     height: c.maxWidth * 0.6,
+                  //     child: Row(
+                  //       children: [
+                  //         const Expanded(
+                  //           child: DefaultCard(),
+                  //         ),
+                  //         Expanded(
+                  //           child: Column(
+                  //             children: [
+                  //               const DefaultCard(),
+                  //               SizedBox(
+                  //                 height: 12.h,
+                  //               ),
+                  //               const DefaultCard(),
+                  //             ],
+                  //           ),
+                  //         ),
+                  //       ],
+                  //     ),
+                  //   );
+                  // })
                 ],
               ),
             ),
