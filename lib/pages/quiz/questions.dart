@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:geografia/pages/quiz/widgtes/card_questoes.dart';
 import 'package:geografia/utils/colors.dart';
-import 'package:geografia/widgets/default_gradiendt_brackground.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 
 class QuestionsQuiz extends StatefulWidget {
@@ -106,10 +106,10 @@ class _QuestionsQuizState extends State<QuestionsQuiz> {
             SizedBox(
               height: 20.h,
             ),
-            CardQuestoes(),
-            CardQuestoes(),
-            CardQuestoes(),
-            CardQuestoes(),
+            const AlternativaQuiz(),
+            const AlternativaQuiz(),
+            const AlternativaQuiz(),
+            const AlternativaQuiz(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -130,11 +130,11 @@ class _QuestionsQuizState extends State<QuestionsQuiz> {
                   ),
                   child: InkWell(
                     onTap: () {
-                      Navigator.pushNamed(context, '/questoes');
+                      Navigator.pop(context);
                     },
                     child: Row(
                       children: [
-                        Icon(Icons.arrow_circle_left, color: DefaultColors.white),
+                        Icon(Icons.arrow_back_ios, color: DefaultColors.white),
                       ],
                     ),
                   ),

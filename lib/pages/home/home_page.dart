@@ -92,16 +92,18 @@ class _HomePageState extends State<HomePage> {
                   SizedBox(
                     height: 20.h,
                   ),
-                  GridView.count(
-                    crossAxisCount: 2,
-                    childAspectRatio: 1.2,
-                    children: [
-                      DefaultCard(),
-                      DefaultCard(),
-                      DefaultCard(),
-                      DefaultCard(),
-                    ],
-                  ),
+                  const DefaultCard(),
+
+                  // GridView.count(
+                  //   crossAxisCount: 2,
+                  //   childAspectRatio: 1.2,
+                  //   children: [
+                  //     DefaultCard(),
+                  //     DefaultCard(),
+                  //     DefaultCard(),
+                  //     DefaultCard(),
+                  //   ],
+                  // ),
                   // LayoutBuilder(builder: (context, c) {
                   //   return SizedBox(
                   //     width: c.maxWidth,
