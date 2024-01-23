@@ -13,4 +13,6 @@ class DefaultColors {
   static Color cardBackground = const Color.fromARGB(255, 111, 189, 218);
   static Color primaryGradiendBackground = const Color(0xFFFCFCF8);
   static Color secondGradientBackground = const Color(0xFFECF7FC);
+  static Color correctQuestion = const Color(0xFF32ab58);
+  static Color incorrectQuestion = const Color(0xFFab3232);
 }

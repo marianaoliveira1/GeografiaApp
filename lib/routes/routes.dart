@@ -10,7 +10,7 @@ class Routes {
     '/login': (context) => const LoginPage(),
     '/home': (context) => const HomePage(),
     '/profile': (context) => const ProfilePage(),
-    '/questoes': (context) => const QuestionsQuiz(),
+    '/questoes': (context) => QuestionsQuiz(),
     '/result': (context) => const ResultQuiz(),
   };
 }
