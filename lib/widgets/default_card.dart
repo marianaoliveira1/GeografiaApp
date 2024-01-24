@@ -37,7 +37,7 @@ class DefaultCard extends StatelessWidget {
               height: 5.h,
             ),
             Text(
-              'Capitas do Brasil',
+              'Biomas Brasileiros',
               style: GoogleFonts.outfit(
                 fontSize: 10.sp,
                 fontWeight: FontWeight.w500,

@@ -8,52 +8,47 @@ import 'package:geografia/utils/colors.dart';
 class AlternativaQuiz extends StatelessWidget {
   final String option;
   final Color color;
-  void Function()? onTap;
 
-  AlternativaQuiz({
+  const AlternativaQuiz({
     Key? key,
     required this.option,
     required this.color,
-    this.onTap,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        margin: EdgeInsets.only(
-          bottom: 10.h,
-          top: 10.h,
-        ),
-        padding: EdgeInsets.all(14.h),
-        decoration: BoxDecoration(
-          color: color,
-          borderRadius: BorderRadius.circular(16.h),
-          boxShadow: [
-            BoxShadow(
-              color: DefaultColors.title,
-              blurRadius: 1.3.r,
-            )
-          ],
-        ),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Expanded(
-              child: Text(
-                option,
-                style: GoogleFonts.outfit(
-                  color: DefaultColors.back,
-                  fontSize: 18.sp,
-                  fontWeight: FontWeight.w400,
-                ),
-                textAlign: TextAlign.center,
+    return Container(
+      margin: EdgeInsets.only(
+        bottom: 10.h,
+        top: 10.h,
+      ),
+      padding: EdgeInsets.all(14.h),
+      decoration: BoxDecoration(
+        color: color,
+        borderRadius: BorderRadius.circular(16.h),
+        boxShadow: [
+          BoxShadow(
+            color: DefaultColors.title,
+            blurRadius: 1.3.r,
+          )
+        ],
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Expanded(
+            child: Text(
+              option,
+              style: GoogleFonts.outfit(
+                color: color.red != color.green ? DefaultColors.white : DefaultColors.back,
+                fontSize: 18.sp,
+                fontWeight: FontWeight.w400,
               ),
+              textAlign: TextAlign.center,
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

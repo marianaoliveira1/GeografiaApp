@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:geografia/datasrouce/list_questios.dart';
+import 'package:geografia/pages/quiz/result_quiz.dart';
 
 import 'package:geografia/pages/quiz/widgtes/alternativa_questoes.dart';
 import 'package:geografia/utils/colors.dart';
@@ -22,15 +23,24 @@ class QuizCard extends StatefulWidget {
 class _QuizCardState extends State<QuizCard> {
   int index = 0;
   bool isPressed = false;
+  int result = 0;
+  bool isAlreadySelected = false;
 
   void nextQuestion() {
     if (index == questions.length - 1) {
-      return;
+      showDialog(
+        context: context,
+        builder: (ctx) => const ResultQuiz(
+          result: result,
+          questionLength: questions.length,
+        ),
+      );
     } else {
       if (isPressed) {
         setState(() {
           index++;
           isPressed = false;
+          isAlreadySelected = false;
         });
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -46,10 +56,14 @@ class _QuizCardState extends State<QuizCard> {
     }
   }
 
-  void changeColor() {
-    setState(() {
-      isPressed = true;
-    });
+  void checkAnswerAndUpdate(bool value) {
+    if (value == true && !isAlreadySelected) {
+      result++;
+      setState(() {
+        isPressed = true;
+        isAlreadySelected = true;
+      });
+    }
   }
 
   @override
@@ -110,14 +124,18 @@ class _QuizCardState extends State<QuizCard> {
               height: 25.h,
             ),
             for (int i = 0; i < questions[index].options.length; i++)
-              AlternativaQuiz(
-                option: questions[index].options.keys.toList()[i],
-                color: isPressed
-                    ? questions[index].options.values.toList()[i] == true
-                        ? DefaultColors.correctQuestion
-                        : DefaultColors.incorrectQuestion
-                    : DefaultColors.white,
-                onTap: changeColor,
+              GestureDetector(
+                onTap: () => checkAnswerAndUpdate(
+                  questions[index].options.values.toList()[i],
+                ),
+                child: AlternativaQuiz(
+                  option: questions[index].options.keys.toList()[i],
+                  color: isPressed
+                      ? questions[index].options.values.toList()[i] == true
+                          ? DefaultColors.correctQuestion
+                          : DefaultColors.incorrectQuestion
+                      : DefaultColors.white,
+                ),
               ),
             Expanded(
               child: Container(),
@@ -138,6 +156,8 @@ class _QuizCardState extends State<QuizCard> {
               child: InkWell(
                 onTap: nextQuestion,
                 child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
                       'Próxima questão',
