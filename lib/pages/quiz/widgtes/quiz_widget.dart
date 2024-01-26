@@ -30,7 +30,7 @@ class _QuizCardState extends State<QuizCard> {
     if (index == questions.length - 1) {
       showDialog(
         context: context,
-        builder: (ctx) => const ResultQuiz(
+        builder: (ctx) => ResultQuiz(
           result: result,
           questionLength: questions.length,
         ),
