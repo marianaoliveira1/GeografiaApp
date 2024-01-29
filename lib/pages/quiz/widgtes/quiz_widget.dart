@@ -10,64 +10,58 @@ import 'package:geografia/utils/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class QuizCard extends StatefulWidget {
-  final String question;
-  final int indexAction;
-  final int totalQuestion;
-
-  const QuizCard({super.key, required this.question, required this.indexAction, required this.totalQuestion});
-
   @override
   State<QuizCard> createState() => _QuizCardState();
 }
 
 class _QuizCardState extends State<QuizCard> {
-  int index = 0;
-  bool isPressed = false;
-  int result = 0;
-  bool isAlreadySelected = false;
-
-  void nextQuestion() {
-    if (index == questions.length - 1) {
-      showDialog(
-        context: context,
-        builder: (ctx) => ResultQuiz(
-          result: result,
-          questionLength: questions.length,
-        ),
-      );
-    } else {
-      if (isPressed) {
-        setState(() {
-          index++;
-          isPressed = false;
-          isAlreadySelected = false;
-        });
-      } else {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text("Por favor, escolha uma opção"),
-            behavior: SnackBarBehavior.floating,
-            margin: EdgeInsets.symmetric(
-              vertical: 20,
-            ),
-          ),
-        );
-      }
-    }
-  }
-
-  void checkAnswerAndUpdate(bool value) {
-    if (value == true && !isAlreadySelected) {
-      result++;
-      setState(() {
-        isPressed = true;
-        isAlreadySelected = true;
-      });
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
+    int index = 0;
+    bool isPressed = false;
+    int result = 0;
+    bool isAlreadySelected = false;
+
+    void nextQuestion() {
+      if (index == questions.length - 1) {
+        showDialog(
+          context: context,
+          builder: (ctx) => ResultQuiz(
+            result: result,
+            questionLength: questions.length,
+          ),
+        );
+      } else {
+        if (isPressed) {
+          setState(() {
+            index++;
+            isPressed = false;
+            isAlreadySelected = false;
+          });
+        } else {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text("Por favor, escolha uma opção"),
+              behavior: SnackBarBehavior.floating,
+              margin: EdgeInsets.symmetric(
+                vertical: 20,
+              ),
+            ),
+          );
+        }
+      }
+    }
+
+    void checkAnswerAndUpdate(bool value) {
+      if (value == true && !isAlreadySelected) {
+        result++;
+        setState(() {
+          isPressed = true;
+          isAlreadySelected = true;
+        });
+      }
+    }
+
     return Scaffold(
       backgroundColor: DefaultColors.white,
       appBar: AppBar(
@@ -85,40 +79,10 @@ class _QuizCardState extends State<QuizCard> {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Row(
-              children: [
-                Text(
-                  'Questão',
-                  style: GoogleFonts.outfit(
-                    color: DefaultColors.back,
-                    fontSize: 18.sp,
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
-                SizedBox(
-                  width: 5.w,
-                ),
-                Text(
-                  '${widget.indexAction + 1}/${widget.totalQuestion}',
-                  style: GoogleFonts.outfit(
-                    color: DefaultColors.back,
-                    fontSize: 18.sp,
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
-              ],
-            ),
-            SizedBox(
-              height: 25.h,
-            ),
-            Text(
-              widget.question,
-              style: GoogleFonts.outfit(
-                color: DefaultColors.back,
-                fontSize: 21.sp,
-                fontWeight: FontWeight.w400,
-              ),
-              textAlign: TextAlign.center,
+            EnunciadoQuestao(
+              indexAction: index,
+              totalQuestion: questions.length,
+              question: questions[index].title,
             ),
             SizedBox(
               height: 25.h,
@@ -175,6 +139,61 @@ class _QuizCardState extends State<QuizCard> {
           ],
         ),
       ),
+    );
+  }
+}
+
+class EnunciadoQuestao extends StatelessWidget {
+  final String question;
+  final int indexAction;
+  final int totalQuestion;
+  const EnunciadoQuestao({
+    super.key,
+    required this.question,
+    required this.indexAction,
+    required this.totalQuestion,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Row(
+          children: [
+            Text(
+              'Questão',
+              style: GoogleFonts.outfit(
+                color: DefaultColors.back,
+                fontSize: 14.sp,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+            SizedBox(
+              width: 5.w,
+            ),
+            Text(
+              '${indexAction + 1}/$totalQuestion',
+              style: GoogleFonts.outfit(
+                color: DefaultColors.back,
+                fontSize: 14.sp,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+          ],
+        ),
+        SizedBox(
+          height: 15.h,
+        ),
+        Text(
+          question,
+          style: GoogleFonts.outfit(
+            color: DefaultColors.back,
+            fontSize: 20.sp,
+            fontWeight: FontWeight.w400,
+          ),
+          textAlign: TextAlign.center,
+        ),
+      ],
     );
   }
 }
