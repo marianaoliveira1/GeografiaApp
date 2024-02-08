@@ -6,10 +6,13 @@ import 'package:geografia/datasrouce/list_questios.dart';
 import 'package:geografia/pages/quiz/result_quiz.dart';
 
 import 'package:geografia/pages/quiz/widgtes/alternativa_questoes.dart';
+import 'package:geografia/pages/quiz/widgtes/enunciado_questao.dart';
 import 'package:geografia/utils/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class QuizCard extends StatefulWidget {
+  const QuizCard({super.key});
+
   @override
   State<QuizCard> createState() => _QuizCardState();
 }
@@ -139,61 +142,6 @@ class _QuizCardState extends State<QuizCard> {
           ],
         ),
       ),
-    );
-  }
-}
-
-class EnunciadoQuestao extends StatelessWidget {
-  final String question;
-  final int indexAction;
-  final int totalQuestion;
-  const EnunciadoQuestao({
-    super.key,
-    required this.question,
-    required this.indexAction,
-    required this.totalQuestion,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Row(
-          children: [
-            Text(
-              'Questão',
-              style: GoogleFonts.outfit(
-                color: DefaultColors.back,
-                fontSize: 14.sp,
-                fontWeight: FontWeight.w400,
-              ),
-            ),
-            SizedBox(
-              width: 5.w,
-            ),
-            Text(
-              '${indexAction + 1}/$totalQuestion',
-              style: GoogleFonts.outfit(
-                color: DefaultColors.back,
-                fontSize: 14.sp,
-                fontWeight: FontWeight.w400,
-              ),
-            ),
-          ],
-        ),
-        SizedBox(
-          height: 15.h,
-        ),
-        Text(
-          question,
-          style: GoogleFonts.outfit(
-            color: DefaultColors.back,
-            fontSize: 20.sp,
-            fontWeight: FontWeight.w400,
-          ),
-          textAlign: TextAlign.center,
-        ),
-      ],
     );
   }
 }

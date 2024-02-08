@@ -41,11 +41,6 @@ class _RegisterPageState extends State<RegisterPage> {
 
     final authService = Get.find<AuthController>();
 
-    // await authService.signUpWithEmailAndPassword(
-    //   emailController.text,
-    //   passwordController.text,
-    // );
-
     try {
       await authService.signUpWithEmailAndPassword(
         emailController.text,

@@ -54,7 +54,10 @@ class AuthController extends GetxController {
       );
 
       await _firebaseFirestore.collection('users').doc(userCredential.user!.uid).set(
-            ModelUser(id: userCredential.user!.uid, name: name).toMap(),
+            ModelUser(
+              id: userCredential.user!.uid,
+              name: name,
+            ).toMap(),
           );
 
       return userCredential;
