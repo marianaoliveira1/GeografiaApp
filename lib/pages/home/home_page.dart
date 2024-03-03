@@ -6,6 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:geografia/controller/auth_service.dart';
 import 'package:geografia/pages/home/drawer/default_drawer.dart';
+import 'package:geografia/questios/list_questios.dart';
 import 'package:geografia/utils/colors.dart';
 import 'package:geografia/widgets/default_card.dart';
 import 'package:get/get.dart';
@@ -75,11 +76,11 @@ class _HomePageState extends State<HomePage> {
                         crossAxisSpacing: 20,
                         mainAxisSpacing: 20,
                       ),
-                      children: const [
-                        DefaultCard(),
-                        DefaultCard(),
-                        DefaultCard(),
-                        DefaultCard(),
+                      children: [
+                        for (var i in quizes)
+                          DefaultCard(
+                            quiz: i,
+                          ),
                       ],
                     ),
                   ),

@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:geografia/questios/list_questios.dart';
+import 'package:geografia/model/quiz.dart';
+
 import 'package:geografia/pages/quiz/widgtes/quiz_card.dart';
 
 import 'package:geografia/utils/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class DefaultCard extends StatelessWidget {
-  const DefaultCard({super.key});
+  final ModelQuiz quiz;
+
+  const DefaultCard({super.key, required this.quiz});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +20,7 @@ class DefaultCard extends StatelessWidget {
           context,
           MaterialPageRoute(
             builder: (context) => QuizCard(
-              quiz: quizes[0],
+              quiz: quiz,
             ),
           ),
         );
@@ -38,15 +41,8 @@ class DefaultCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
-              "assets/icons/brazil.png",
-              height: 40.h,
-            ),
-            SizedBox(
-              height: 5.h,
-            ),
             Text(
-              'Biomas Brasileiros',
+              quiz.title,
               style: GoogleFonts.outfit(
                 fontSize: 10.sp,
                 fontWeight: FontWeight.w500,
