@@ -1,48 +1,4 @@
 import 'package:geografia/model/question.dart';
-import 'package:geografia/model/quiz.dart';
-
-List<ModelQuiz> quizes = [
-  ModelQuiz(
-    id: '1',
-    title: 'Biomas Brasileiros',
-    questions: questionsBiomas,
-  ),
-  ModelQuiz(
-    id: '2',
-    title: 'Estados Brasileiros',
-    questions: questionsBiomas,
-  ),
-  ModelQuiz(
-    id: '3',
-    title: 'Capitais Brasileiras',
-    questions: questionsBiomas,
-  ),
-  ModelQuiz(
-    id: '4',
-    title: 'Rios Brasileiros',
-    questions: questionsBiomas,
-  ),
-  ModelQuiz(
-    id: '5',
-    title: 'Clima Brasileiro',
-    questions: questionsBiomas,
-  ),
-  ModelQuiz(
-    id: '6',
-    title: 'Relevo Brasileiro',
-    questions: questionsBiomas,
-  ),
-  ModelQuiz(
-    id: '7',
-    title: 'Vegetação Brasileira',
-    questions: questionsBiomas,
-  ),
-  ModelQuiz(
-    id: '8',
-    title: 'Hidrografia Brasileira',
-    questions: questionsBiomas,
-  ),
-];
 
 List<ModelQuestion> questionsBiomas = [
   ModelQuestion(

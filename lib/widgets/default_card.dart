@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:geografia/datasrouce/list_questios.dart';
+import 'package:geografia/questios/list_questios.dart';
 import 'package:geografia/pages/quiz/widgtes/quiz_card.dart';
 
 import 'package:geografia/utils/colors.dart';
