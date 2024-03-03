@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:geografia/datasrouce/list_questios.dart';
+import 'package:geografia/pages/quiz/widgtes/quiz_card.dart';
 
 import 'package:geografia/utils/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -11,7 +13,14 @@ class DefaultCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, '/questoes');
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => QuizCard(
+              quiz: quizes[0],
+            ),
+          ),
+        );
       },
       child: Container(
         padding: const EdgeInsets.all(14),

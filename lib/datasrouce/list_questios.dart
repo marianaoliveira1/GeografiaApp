@@ -1,7 +1,51 @@
+import 'package:geografia/model/question.dart';
 import 'package:geografia/model/quiz.dart';
 
-List<ModelQuiz> questions = [
+List<ModelQuiz> quizes = [
   ModelQuiz(
+    id: '1',
+    title: 'Biomas Brasileiros',
+    questions: questionsBiomas,
+  ),
+  ModelQuiz(
+    id: '2',
+    title: 'Estados Brasileiros',
+    questions: questionsBiomas,
+  ),
+  ModelQuiz(
+    id: '3',
+    title: 'Capitais Brasileiras',
+    questions: questionsBiomas,
+  ),
+  ModelQuiz(
+    id: '4',
+    title: 'Rios Brasileiros',
+    questions: questionsBiomas,
+  ),
+  ModelQuiz(
+    id: '5',
+    title: 'Clima Brasileiro',
+    questions: questionsBiomas,
+  ),
+  ModelQuiz(
+    id: '6',
+    title: 'Relevo Brasileiro',
+    questions: questionsBiomas,
+  ),
+  ModelQuiz(
+    id: '7',
+    title: 'Vegetação Brasileira',
+    questions: questionsBiomas,
+  ),
+  ModelQuiz(
+    id: '8',
+    title: 'Hidrografia Brasileira',
+    questions: questionsBiomas,
+  ),
+];
+
+List<ModelQuestion> questionsBiomas = [
+  ModelQuestion(
     id: '1',
     title: 'Qual é o maior bioma brasileiro, conhecido por abrigar a Floresta Amazônica?',
     options: {
@@ -11,7 +55,7 @@ List<ModelQuiz> questions = [
       'Caatinga': false,
     },
   ),
-  ModelQuiz(
+  ModelQuestion(
     id: '2',
     title: 'O Pantanal é um bioma brasileiro conhecido por:',
     options: {
@@ -21,7 +65,7 @@ List<ModelQuiz> questions = [
       'Clima frio e seco': false,
     },
   ),
-  ModelQuiz(
+  ModelQuestion(
     id: '3',
     title: 'O Cerrado é caracterizado por:',
     options: {
@@ -31,7 +75,7 @@ List<ModelQuiz> questions = [
       'Floresta densa e úmida': false,
     },
   ),
-  ModelQuiz(
+  ModelQuestion(
     id: '4',
     title: 'Qual bioma é conhecido por suas árvores altas e retorcidas, além de abrigar o Mico-leão-dourado?',
     options: {
@@ -41,7 +85,7 @@ List<ModelQuiz> questions = [
       'Caatinga': false,
     },
   ),
-  ModelQuiz(
+  ModelQuestion(
     id: '5',
     title: 'Onde encontramos o bioma Pampa, caracterizado por vastas planícies herbáceas?',
     options: {
@@ -51,7 +95,7 @@ List<ModelQuiz> questions = [
       'Sudeste': false,
     },
   ),
-  ModelQuiz(
+  ModelQuestion(
     id: '6',
     title: 'A Caatinga é conhecida por:',
     options: {
@@ -61,7 +105,7 @@ List<ModelQuiz> questions = [
       'Extensos campos de grama verde': false,
     },
   ),
-  ModelQuiz(
+  ModelQuestion(
     id: '7',
     title: 'Quais animais podem ser encontrados no bioma Mata Atlântica?',
     options: {
@@ -71,7 +115,7 @@ List<ModelQuiz> questions = [
       'Camelos e cobras': false,
     },
   ),
-  ModelQuiz(
+  ModelQuestion(
     id: '8',
     title: 'Onde está localizado o bioma dos Pampas, com suas grandes extensões de campos?',
     options: {
@@ -81,7 +125,7 @@ List<ModelQuiz> questions = [
       'Centro-Oeste': false,
     },
   ),
-  ModelQuiz(
+  ModelQuestion(
     id: '9',
     title: 'Quais características definem o bioma Mata Atlântica?',
     options: {
@@ -91,7 +135,7 @@ List<ModelQuiz> questions = [
       'Planícies alagadas e chuvas frequentes': false,
     },
   ),
-  ModelQuiz(
+  ModelQuestion(
     id: '10',
     title: 'Onde encontramos o bioma Cerrado, com suas savanas e vegetação variada?',
     options: {

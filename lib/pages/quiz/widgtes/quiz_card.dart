@@ -2,7 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:geografia/datasrouce/list_questios.dart';
+import 'package:geografia/model/quiz.dart';
+
 import 'package:geografia/pages/quiz/result_quiz.dart';
 
 import 'package:geografia/pages/quiz/widgtes/alternativa_questoes.dart';
@@ -11,7 +12,8 @@ import 'package:geografia/utils/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class QuizCard extends StatefulWidget {
-  const QuizCard({super.key});
+  final ModelQuiz quiz;
+  const QuizCard({super.key, required this.quiz});
 
   @override
   State<QuizCard> createState() => _QuizCardState();
@@ -24,43 +26,7 @@ class _QuizCardState extends State<QuizCard> {
 
   @override
   Widget build(BuildContext context) {
-    // void nextQuestion() {
-    //   if (index == questions.length - 1) {
-    //     showDialog(
-    //       context: context,
-    //       builder: (ctx) => ResultQuiz(
-    //         result: selectedAnswer,
-    //         questionLength: questions.length,
-    //       ),
-    //     );
-    //   } else {
-    //     if (isPressed) {
-    //       setState(() {
-    //         index++;
-    //         isPressed = false;
-    //         isAlreadySelected = false;
-    //       });
-    //     } else {
-    //       ScaffoldMessenger.of(context).showSnackBar(
-    //         const SnackBar(
-    //           content: Text("Por favor, escolha uma opção"),
-    //           behavior: SnackBarBehavior.floating,
-    //           margin: EdgeInsets.symmetric(
-    //             vertical: 20,
-    //           ),
-    //         ),
-    //       );
-    //     }
-    //   }
-    // }
-
-    // void checkAnswerAndUpdate(bool value) {
-    //   selectedAnswer++;
-    //   setState(() {
-    //     isPressed = true;
-    //     isAlreadySelected = true;
-    //   });
-    // }
+    final questions = widget.quiz.questions;
 
     return Scaffold(
       backgroundColor: DefaultColors.white,
@@ -93,9 +59,6 @@ class _QuizCardState extends State<QuizCard> {
                   setState(() {
                     selectedAnswer ??= i;
                   });
-                  // checkAnswerAndUpdate(
-                  //   questions[index].options.values.toList()[i],
-                  // );
                 },
                 child: AlternativaQuiz(
                   option: questions[currentQuestionIndex].options.keys.toList()[i],
