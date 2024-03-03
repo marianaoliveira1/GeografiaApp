@@ -8,11 +8,13 @@ import 'package:geografia/utils/colors.dart';
 class AlternativaQuiz extends StatelessWidget {
   final String option;
   final Color color;
+  final Color borderColor;
 
   const AlternativaQuiz({
     Key? key,
     required this.option,
     required this.color,
+    required this.borderColor,
   }) : super(key: key);
 
   @override
@@ -26,6 +28,10 @@ class AlternativaQuiz extends StatelessWidget {
       decoration: BoxDecoration(
         color: color,
         borderRadius: BorderRadius.circular(16.h),
+        border: Border.all(
+          color: borderColor,
+          width: 3.w,
+        ),
         boxShadow: [
           BoxShadow(
             color: DefaultColors.title,

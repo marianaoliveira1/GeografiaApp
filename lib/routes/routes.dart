@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:geografia/pages/home/home_page.dart';
 import 'package:geografia/pages/login/login_page.dart';
 import 'package:geografia/pages/profile/perfil_page.dart';
-import 'package:geografia/pages/quiz/widgtes/quiz_widget.dart';
+import 'package:geografia/pages/quiz/widgtes/quiz_card.dart';
 
 class Routes {
   static final Map<String, WidgetBuilder> routes = {
