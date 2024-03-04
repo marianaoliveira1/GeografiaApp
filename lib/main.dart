@@ -7,6 +7,7 @@ import 'package:geografia/pages/splash/splash_page.dart';
 import 'package:geografia/controller/auth_service.dart';
 import 'package:geografia/routes/routes.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -28,6 +29,9 @@ class MyApp extends StatelessWidget {
         title: 'Geografia App',
         debugShowCheckedModeBanner: false,
         routes: Routes.routes,
+        theme: ThemeData(
+          textTheme: GoogleFonts.robotoTextTheme(Theme.of(context).textTheme),
+        ),
         home: const SpashPage(),
       ),
     );

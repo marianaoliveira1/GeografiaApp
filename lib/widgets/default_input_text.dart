@@ -35,8 +35,9 @@ class DefaultInputText extends StatelessWidget {
         style: TextStyle(color: DefaultColors.title),
         decoration: InputDecoration(
           hintText: hintText,
-          hintStyle:
-              GoogleFonts.outfit(color: DefaultColors.grayBackgroundInput),
+          hintStyle: GoogleFonts.roboto(
+            color: DefaultColors.grayBackgroundInput,
+          ),
           prefixIcon: Icon(
             icon,
             color: DefaultColors.grayBackgroundInput,

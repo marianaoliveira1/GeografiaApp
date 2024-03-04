@@ -36,7 +36,7 @@ class DefaultDrawer extends StatelessWidget {
             ),
             Text(
               '${currentUser!.email}',
-              style: GoogleFonts.outfit(
+              style: GoogleFonts.roboto(
                 color: DefaultColors.white,
                 fontSize: 12.sp,
                 fontWeight: FontWeight.w400,

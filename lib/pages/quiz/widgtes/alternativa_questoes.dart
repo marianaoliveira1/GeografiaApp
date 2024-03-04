@@ -46,7 +46,7 @@ class AlternativaQuiz extends StatelessWidget {
           Expanded(
             child: Text(
               option,
-              style: GoogleFonts.outfit(
+              style: GoogleFonts.roboto(
                 color: color.red != color.green ? DefaultColors.white : DefaultColors.back,
                 fontSize: 18.sp,
                 fontWeight: FontWeight.w400,

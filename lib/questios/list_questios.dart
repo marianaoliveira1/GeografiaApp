@@ -15,77 +15,77 @@ import 'package:geografia/questios/list/vegetacao.dart';
 List<ModelQuiz> quizes = [
   ModelQuiz(
     id: '1',
-    title: 'Biomas Brasileiros',
+    title: 'Biomas',
     questions: questionsBiomas,
   ),
   ModelQuiz(
     id: '2',
-    title: 'Estados Brasileiros',
+    title: 'Estados',
     questions: questionsEstados,
   ),
   ModelQuiz(
     id: '3',
-    title: 'Clima do Brasil',
+    title: 'Clima',
     questions: questionsClima,
   ),
   ModelQuiz(
     id: '4',
-    title: 'Gloabalização Brasil',
+    title: 'Gloabalização',
     questions: questionsGlobalizacao,
   ),
   ModelQuiz(
     id: '5',
-    title: 'Economia do Brasil',
+    title: 'Economia',
     questions: questionsEconomia,
   ),
   ModelQuiz(
     id: '6',
-    title: 'Relevo Brasileiro',
+    title: 'Relevo',
     questions: questionsRelevo,
   ),
   ModelQuiz(
     id: '7',
-    title: 'Vegetação Brasileira',
+    title: 'Vegetação',
     questions: questionsVegetacao,
   ),
   ModelQuiz(
     id: '8',
-    title: 'Hidrografia Brasileira',
+    title: 'Hidrografia',
     questions: questionsHidrografia,
   ),
   ModelQuiz(
     id: '9',
-    title: 'Popluação indigena Brasileira',
+    title: 'Popluação indigena',
     questions: questionsIndio,
   ),
   ModelQuiz(
     id: '10',
-    title: 'Migração Brasileira',
+    title: 'Migração',
     questions: questionsHidrografia,
   ),
   ModelQuiz(
     id: '11',
-    title: 'Politica Ambiental Brasileira',
+    title: 'Politica Ambiental',
     questions: questionsPoliticaAmbiental,
   ),
   ModelQuiz(
     id: '12',
-    title: 'População Brasileira',
+    title: 'População',
     questions: questionsPopluacao,
   ),
   ModelQuiz(
     id: '13',
-    title: 'Relevo Brasileiro',
+    title: 'Relevo',
     questions: questionsRelevo,
   ),
   ModelQuiz(
     id: '14',
-    title: 'Transporte Brasileiro',
+    title: 'Transporte',
     questions: questionsTransportes,
   ),
   ModelQuiz(
     id: '15',
-    title: 'Vegetaçaõ Brasileira',
+    title: 'Vegetaçaõ',
     questions: questionsVegetacao,
   ),
 ];

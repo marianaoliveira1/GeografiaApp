@@ -18,7 +18,7 @@ class ResultQuiz extends StatelessWidget {
       backgroundColor: DefaultColors.white,
       title: Text(
         "Resultado",
-        style: GoogleFonts.outfit(
+        style: GoogleFonts.roboto(
           color: DefaultColors.title,
           fontSize: 18.sp,
           fontWeight: FontWeight.w400,
@@ -26,7 +26,7 @@ class ResultQuiz extends StatelessWidget {
       ),
       content: Text(
         "Você acertou $result de $questionLength questões",
-        style: GoogleFonts.outfit(
+        style: GoogleFonts.roboto(
           color: DefaultColors.title,
           fontSize: 16.sp,
           fontWeight: FontWeight.w400,
@@ -39,7 +39,7 @@ class ResultQuiz extends StatelessWidget {
           },
           child: Text(
             "Ok",
-            style: GoogleFonts.outfit(
+            style: GoogleFonts.roboto(
               color: DefaultColors.title,
               fontSize: 16.sp,
               fontWeight: FontWeight.w400,

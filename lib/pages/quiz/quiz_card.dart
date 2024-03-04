@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:geografia/model/quiz.dart';
 
-import 'package:geografia/pages/quiz/result_quiz.dart';
+import 'package:geografia/pages/quiz/widgtes/result_quiz.dart';
 
 import 'package:geografia/pages/quiz/widgtes/alternativa_questoes.dart';
 import 'package:geografia/pages/quiz/widgtes/enunciado_questao.dart';
@@ -123,7 +123,7 @@ class _QuizCardState extends State<QuizCard> {
                         children: [
                           Text(
                             'Próxima questão',
-                            style: GoogleFonts.outfit(
+                            style: GoogleFonts.roboto(
                               color: DefaultColors.white,
                               fontSize: 16.sp,
                               fontWeight: FontWeight.w500,

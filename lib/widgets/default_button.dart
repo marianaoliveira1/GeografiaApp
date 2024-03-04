@@ -30,10 +30,11 @@ class DefaultButton extends StatelessWidget {
         child: Text(
           text,
           textAlign: TextAlign.center,
-          style: GoogleFonts.outfit(
-              color: DefaultColors.white,
-              fontSize: 16.sp,
-              fontWeight: FontWeight.w600),
+          style: GoogleFonts.roboto(
+            color: DefaultColors.white,
+            fontSize: 16.sp,
+            fontWeight: FontWeight.w600,
+          ),
         ),
       ),
     ).animate().fade(duration: 1500.ms).slideY();

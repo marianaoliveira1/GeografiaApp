@@ -18,16 +18,17 @@ class ButtonJaPossuiConta extends StatelessWidget {
       children: [
         Text(
           'Já possui uma conta? ',
-          style: GoogleFonts.outfit(color: DefaultColors.title, fontSize: 12),
+          style: GoogleFonts.roboto(color: DefaultColors.title, fontSize: 12),
         ),
         GestureDetector(
           onTap: widget.onTap,
           child: Text(
             'Entrar',
-            style: GoogleFonts.outfit(
-                color: DefaultColors.title,
-                fontSize: 12,
-                fontWeight: FontWeight.bold),
+            style: GoogleFonts.roboto(
+              color: DefaultColors.title,
+              fontSize: 12,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
       ],

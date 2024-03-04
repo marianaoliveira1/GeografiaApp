@@ -23,7 +23,7 @@ class EnunciadoQuestao extends StatelessWidget {
           children: [
             Text(
               'Questão',
-              style: GoogleFonts.outfit(
+              style: GoogleFonts.roboto(
                 color: DefaultColors.back,
                 fontSize: 14.sp,
                 fontWeight: FontWeight.w400,
@@ -34,7 +34,7 @@ class EnunciadoQuestao extends StatelessWidget {
             ),
             Text(
               '${indexAction + 1}/$totalQuestion',
-              style: GoogleFonts.outfit(
+              style: GoogleFonts.roboto(
                 color: DefaultColors.back,
                 fontSize: 14.sp,
                 fontWeight: FontWeight.w400,
@@ -47,7 +47,7 @@ class EnunciadoQuestao extends StatelessWidget {
         ),
         Text(
           question,
-          style: GoogleFonts.outfit(
+          style: GoogleFonts.roboto(
             color: DefaultColors.back,
             fontSize: 20.sp,
             fontWeight: FontWeight.w400,
