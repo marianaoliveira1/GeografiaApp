@@ -27,14 +27,16 @@ class DefaultCard extends StatelessWidget {
         );
       },
       child: Container(
-        padding: const EdgeInsets.all(14),
+        padding: const EdgeInsets.all(5),
         decoration: BoxDecoration(
-          color: DefaultColors.white,
+          color: DefaultColors.branco.withOpacity(.8),
           borderRadius: BorderRadius.circular(16.h),
           boxShadow: [
             BoxShadow(
-              color: DefaultColors.title,
-              blurRadius: 1.3.r,
+              color: Colors.grey.withOpacity(0.1),
+              spreadRadius: 1,
+              blurRadius: 7,
+              offset: const Offset(0, 3),
             ),
           ],
         ),

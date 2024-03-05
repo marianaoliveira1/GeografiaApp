@@ -31,7 +31,7 @@ class DefaultButton extends StatelessWidget {
           text,
           textAlign: TextAlign.center,
           style: GoogleFonts.roboto(
-            color: DefaultColors.white,
+            color: DefaultColors.bege,
             fontSize: 16.sp,
             fontWeight: FontWeight.w600,
           ),

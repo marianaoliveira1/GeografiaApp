@@ -9,7 +9,7 @@ import 'package:geografia/controller/auth_service.dart';
 import 'package:geografia/widgets/default_button.dart';
 
 import 'package:geografia/utils/colors.dart';
-import 'package:geografia/widgets/default_image.dart';
+
 import 'package:geografia/widgets/default_input_text.dart';
 import 'package:geografia/widgets/default_title_h1.dart';
 import 'package:get/get.dart';
@@ -49,7 +49,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: DefaultColors.white,
+      backgroundColor: DefaultColors.bege,
       body: Padding(
         padding: EdgeInsets.all(40.0.h),
         child: SingleChildScrollView(
@@ -60,9 +60,9 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(
                 height: 90.h,
               ),
-              const DefaultImage(
-                image: 'assets/icons/parrot.png',
-              ),
+              // const DefaultImage(
+              //   image: 'assets/icons/parrot.png',
+              // ),
               SizedBox(
                 height: 50.h,
               ),

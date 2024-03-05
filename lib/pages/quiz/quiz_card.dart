@@ -29,7 +29,7 @@ class _QuizCardState extends State<QuizCard> {
     final questions = widget.quiz.questions;
 
     return Scaffold(
-      backgroundColor: DefaultColors.white,
+      backgroundColor: DefaultColors.bege,
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {
@@ -37,7 +37,7 @@ class _QuizCardState extends State<QuizCard> {
           },
           icon: const Icon(Icons.arrow_back),
         ),
-        backgroundColor: DefaultColors.white,
+        backgroundColor: DefaultColors.bege,
       ),
       body: Container(
         margin: EdgeInsets.only(left: 30.w, right: 30.w, top: 10.h),
@@ -62,12 +62,11 @@ class _QuizCardState extends State<QuizCard> {
                 },
                 child: AlternativaQuiz(
                   option: questions[currentQuestionIndex].options.keys.toList()[i],
-                  color: selectedAnswer != null
+                  color: selectedAnswer != null && (selectedAnswer == i || questions[currentQuestionIndex].options.values.toList()[i] == true)
                       ? questions[currentQuestionIndex].options.values.toList()[i] == true
                           ? DefaultColors.correctQuestion
                           : DefaultColors.incorrectQuestion
-                      : DefaultColors.white,
-                  borderColor: selectedAnswer == i ? DefaultColors.back : Colors.transparent,
+                      : DefaultColors.bege,
                 ),
               ),
             Expanded(
@@ -81,7 +80,7 @@ class _QuizCardState extends State<QuizCard> {
                       top: 15.h,
                     ),
                     decoration: BoxDecoration(
-                      color: DefaultColors.primaryBackground,
+                      color: DefaultColors.blue,
                       borderRadius: BorderRadius.circular(14.r),
                     ),
                     padding: EdgeInsets.only(
@@ -124,7 +123,7 @@ class _QuizCardState extends State<QuizCard> {
                           Text(
                             'Próxima questão',
                             style: GoogleFonts.roboto(
-                              color: DefaultColors.white,
+                              color: DefaultColors.bege,
                               fontSize: 16.sp,
                               fontWeight: FontWeight.w500,
                             ),

@@ -30,7 +30,7 @@ class _SpashPageState extends State<SpashPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: DefaultColors.white,
+      color: DefaultColors.branco,
       child: Center(
         child: Image.asset(
           "assets/images/brazil.jpg",

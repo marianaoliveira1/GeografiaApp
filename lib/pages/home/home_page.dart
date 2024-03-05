@@ -10,6 +10,7 @@ import 'package:geografia/questios/list_questios.dart';
 import 'package:geografia/utils/colors.dart';
 import 'package:geografia/widgets/default_card.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -26,11 +27,7 @@ class _HomePageState extends State<HomePage> {
     final authService = Get.find<AuthController>();
 
     return Scaffold(
-      backgroundColor: DefaultColors.white,
-      appBar: AppBar(
-        elevation: 0.0,
-        backgroundColor: Colors.transparent,
-      ),
+      backgroundColor: DefaultColors.bege,
       drawer: DefaultDrawer(
         currentUser: currentUser,
         authService: authService,
@@ -44,30 +41,41 @@ class _HomePageState extends State<HomePage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  // Row(
-                  //   children: [
-                  //     Text(
-                  //       'Oi, ',
-                  //       style: GoogleFonts.outfit(
-                  //         color: DefaultColors.back,
-                  //         fontSize: 22.sp,
-                  //         fontWeight: FontWeight.w400,
-                  //       ),
-                  //     ),
-                  //     Obx(
-                  //       () => Text(
-                  //         '${authService.modelUser.value?.name}',
-                  //         style: GoogleFonts.outfit(
-                  //           color: DefaultColors.back,
-                  //           fontSize: 22.sp,
-                  //           fontWeight: FontWeight.w400,
-                  //         ),
-                  //       ),
-                  //     ),
-                  //   ],
-                  // ),
+                  Row(
+                    children: [
+                      Text(
+                        'Oi, ',
+                        style: GoogleFonts.roboto(
+                          color: DefaultColors.back.withOpacity(.7),
+                          fontSize: 16.sp,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
+                      Obx(
+                        () => Text(
+                          '${authService.modelUser.value?.name}',
+                          style: GoogleFonts.roboto(
+                            color: DefaultColors.back.withOpacity(.7),
+                            fontSize: 16.sp,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                   SizedBox(
-                    height: 20.h,
+                    height: 10.h,
+                  ),
+                  Text(
+                    'Vamos começar',
+                    style: GoogleFonts.roboto(
+                      color: DefaultColors.back,
+                      fontSize: 20.sp,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 15.h,
                   ),
                   Expanded(
                     child: GridView(
@@ -75,6 +83,7 @@ class _HomePageState extends State<HomePage> {
                         crossAxisCount: 2,
                         crossAxisSpacing: 20,
                         mainAxisSpacing: 20,
+                        childAspectRatio: 1.2,
                       ),
                       children: [
                         for (var i in quizes)
@@ -83,6 +92,9 @@ class _HomePageState extends State<HomePage> {
                           ),
                       ],
                     ),
+                  ),
+                  SizedBox(
+                    height: 30.h,
                   ),
                 ],
               ),

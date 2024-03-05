@@ -18,29 +18,15 @@ class EnunciadoQuestao extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Row(
-          children: [
-            Text(
-              'Questão',
-              style: GoogleFonts.roboto(
-                color: DefaultColors.back,
-                fontSize: 14.sp,
-                fontWeight: FontWeight.w400,
-              ),
-            ),
-            SizedBox(
-              width: 5.w,
-            ),
-            Text(
-              '${indexAction + 1}/$totalQuestion',
-              style: GoogleFonts.roboto(
-                color: DefaultColors.back,
-                fontSize: 14.sp,
-                fontWeight: FontWeight.w400,
-              ),
-            ),
-          ],
+        Text(
+          'Questão ${indexAction + 1} de $totalQuestion',
+          style: GoogleFonts.roboto(
+            color: DefaultColors.blue,
+            fontSize: 14.sp,
+            fontWeight: FontWeight.w400,
+          ),
         ),
         SizedBox(
           height: 15.h,
@@ -48,8 +34,8 @@ class EnunciadoQuestao extends StatelessWidget {
         Text(
           question,
           style: GoogleFonts.roboto(
-            color: DefaultColors.back,
-            fontSize: 20.sp,
+            color: Colors.black,
+            fontSize: 24.sp,
             fontWeight: FontWeight.w400,
           ),
           textAlign: TextAlign.center,

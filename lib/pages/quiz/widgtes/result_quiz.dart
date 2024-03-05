@@ -15,7 +15,7 @@ class ResultQuiz extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      backgroundColor: DefaultColors.white,
+      backgroundColor: DefaultColors.bege,
       title: Text(
         "Resultado",
         style: GoogleFonts.roboto(
