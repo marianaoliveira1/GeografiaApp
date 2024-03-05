@@ -28,7 +28,7 @@ class AlternativaQuiz extends StatelessWidget {
         borderRadius: BorderRadius.circular(16.h),
         boxShadow: [
           BoxShadow(
-            color: DefaultColors.blue,
+            color: DefaultColors.branco,
             blurRadius: 1.3.r,
           )
         ],
@@ -41,7 +41,7 @@ class AlternativaQuiz extends StatelessWidget {
             child: Text(
               option,
               style: GoogleFonts.roboto(
-                color: color.red != color.green ? DefaultColors.bege : DefaultColors.blue,
+                color: color.red != color.green ? DefaultColors.branco : DefaultColors.black,
                 fontSize: 18.sp,
                 fontWeight: FontWeight.w400,
               ),

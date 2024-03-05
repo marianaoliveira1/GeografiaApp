@@ -66,7 +66,7 @@ class _QuizCardState extends State<QuizCard> {
                       ? questions[currentQuestionIndex].options.values.toList()[i] == true
                           ? DefaultColors.correctQuestion
                           : DefaultColors.incorrectQuestion
-                      : DefaultColors.bege,
+                      : DefaultColors.branco,
                 ),
               ),
             Expanded(
@@ -80,7 +80,7 @@ class _QuizCardState extends State<QuizCard> {
                       top: 15.h,
                     ),
                     decoration: BoxDecoration(
-                      color: DefaultColors.blue,
+                      color: DefaultColors.roxo,
                       borderRadius: BorderRadius.circular(14.r),
                     ),
                     padding: EdgeInsets.only(

@@ -19,11 +19,12 @@ class EnunciadoQuestao extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Text(
           'Questão ${indexAction + 1} de $totalQuestion',
           style: GoogleFonts.roboto(
-            color: DefaultColors.blue,
+            color: DefaultColors.black,
             fontSize: 14.sp,
             fontWeight: FontWeight.w400,
           ),
@@ -36,7 +37,7 @@ class EnunciadoQuestao extends StatelessWidget {
           style: GoogleFonts.roboto(
             color: Colors.black,
             fontSize: 24.sp,
-            fontWeight: FontWeight.w400,
+            fontWeight: FontWeight.w700,
           ),
           textAlign: TextAlign.center,
         ),

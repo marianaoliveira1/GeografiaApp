@@ -35,18 +35,25 @@ class _HomePageState extends State<HomePage> {
       body: SafeArea(
         child: Stack(
           children: [
-            Container(
-              margin: EdgeInsets.only(left: 30.w, right: 30.w, top: 20.h),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Row(
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Container(
+                  width: MediaQuery.of(context).size.width,
+                  height: MediaQuery.of(context).size.height / 3.5,
+                  decoration: BoxDecoration(
+                    color: DefaultColors.roxo,
+                    borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(70.r),
+                    ),
+                  ),
+                  child: Row(
                     children: [
                       Text(
                         'Oi, ',
                         style: GoogleFonts.roboto(
-                          color: DefaultColors.back.withOpacity(.7),
+                          color: DefaultColors.branco,
                           fontSize: 16.sp,
                           fontWeight: FontWeight.w400,
                         ),
@@ -55,7 +62,7 @@ class _HomePageState extends State<HomePage> {
                         () => Text(
                           '${authService.modelUser.value?.name}',
                           style: GoogleFonts.roboto(
-                            color: DefaultColors.back.withOpacity(.7),
+                            color: DefaultColors.branco,
                             fontSize: 16.sp,
                             fontWeight: FontWeight.w400,
                           ),
@@ -63,41 +70,41 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ],
                   ),
-                  SizedBox(
-                    height: 10.h,
+                ),
+                SizedBox(
+                  height: 10.h,
+                ),
+                Text(
+                  'Vamos começar',
+                  style: GoogleFonts.roboto(
+                    color: DefaultColors.black,
+                    fontSize: 20.sp,
+                    fontWeight: FontWeight.w400,
                   ),
-                  Text(
-                    'Vamos começar',
-                    style: GoogleFonts.roboto(
-                      color: DefaultColors.back,
-                      fontSize: 20.sp,
-                      fontWeight: FontWeight.w400,
+                ),
+                SizedBox(
+                  height: 15.h,
+                ),
+                Expanded(
+                  child: GridView(
+                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      crossAxisSpacing: 20,
+                      mainAxisSpacing: 20,
+                      childAspectRatio: 1.2,
                     ),
+                    children: [
+                      for (var i in quizes)
+                        DefaultCard(
+                          quiz: i,
+                        ),
+                    ],
                   ),
-                  SizedBox(
-                    height: 15.h,
-                  ),
-                  Expanded(
-                    child: GridView(
-                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 2,
-                        crossAxisSpacing: 20,
-                        mainAxisSpacing: 20,
-                        childAspectRatio: 1.2,
-                      ),
-                      children: [
-                        for (var i in quizes)
-                          DefaultCard(
-                            quiz: i,
-                          ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(
-                    height: 30.h,
-                  ),
-                ],
-              ),
+                ),
+                SizedBox(
+                  height: 30.h,
+                ),
+              ],
             ),
           ],
         ),
