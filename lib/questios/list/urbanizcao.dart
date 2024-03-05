@@ -1,6 +1,6 @@
 import 'package:geografia/model/question.dart';
 
-List<ModelQuestion> questionsRelevo = [
+List<ModelQuestion> questionsUrbanizacao = [
   {
     "id": "1",
     "title": "Qual é o maior desafio da urbanização no Brasil?",

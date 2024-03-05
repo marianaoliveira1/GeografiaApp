@@ -14,7 +14,6 @@ class DefaultCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final questions = quiz.questions;
     return GestureDetector(
       onTap: () {
         Navigator.push(
@@ -44,20 +43,17 @@ class DefaultCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Image.asset(
+              quiz.image,
+              height: 60.h,
+            ),
+            SizedBox(height: 10.h),
             Text(
               quiz.title,
               style: GoogleFonts.roboto(
-                fontSize: 14.sp,
-                fontWeight: FontWeight.w500,
-                color: DefaultColors.grayBackground,
-              ),
-            ),
-            Text(
-              '${questions.length} questões',
-              style: GoogleFonts.roboto(
                 fontSize: 12.sp,
                 fontWeight: FontWeight.w500,
-                color: DefaultColors.grayBackground.withOpacity(.7),
+                color: DefaultColors.grayBackground,
               ),
             ),
           ],

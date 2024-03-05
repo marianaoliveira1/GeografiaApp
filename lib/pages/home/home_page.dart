@@ -32,82 +32,113 @@ class _HomePageState extends State<HomePage> {
         currentUser: currentUser,
         authService: authService,
       ),
-      body: SafeArea(
-        child: Stack(
-          children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Container(
-                  width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height / 3.5,
-                  decoration: BoxDecoration(
-                    color: DefaultColors.roxo,
-                    borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(70.r),
-                    ),
+      body: Stack(
+        children: [
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Container(
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height / 3.5,
+                decoration: BoxDecoration(
+                  color: DefaultColors.roxo,
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(70.r),
                   ),
-                  child: Row(
+                ),
+                child: Container(
+                  margin: EdgeInsets.only(
+                    left: 20.w,
+                    right: 20.w,
+                    top: 45.h,
+                  ),
+                  child: Column(
                     children: [
                       Text(
-                        'Oi, ',
-                        style: GoogleFonts.roboto(
+                        'Quiz de Geografia',
+                        style: GoogleFonts.inconsolata(
                           color: DefaultColors.branco,
-                          fontSize: 16.sp,
-                          fontWeight: FontWeight.w400,
+                          fontSize: 22.sp,
+                          fontWeight: FontWeight.w600,
                         ),
                       ),
-                      Obx(
-                        () => Text(
-                          '${authService.modelUser.value?.name}',
-                          style: GoogleFonts.roboto(
-                            color: DefaultColors.branco,
-                            fontSize: 16.sp,
-                            fontWeight: FontWeight.w400,
+                      SizedBox(
+                        height: 10.h,
+                      ),
+                      Row(
+                        children: [
+                          Text(
+                            'Oi, ',
+                            style: GoogleFonts.roboto(
+                              color: DefaultColors.branco.withOpacity(.7),
+                              fontSize: 12.sp,
+                              fontWeight: FontWeight.w400,
+                            ),
                           ),
+                          Obx(
+                            () => Text(
+                              '${authService.modelUser.value?.name}',
+                              style: GoogleFonts.roboto(
+                                color: DefaultColors.branco.withOpacity(.7),
+                                fontSize: 12.sp,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Text(
+                            'Vamos começar um jogo!',
+                            style: GoogleFonts.roboto(
+                              color: DefaultColors.branco,
+                              fontSize: 16.sp,
+                              fontWeight: FontWeight.w500,
+                            ),
+                            textAlign: TextAlign.start,
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Container(
+                  margin: EdgeInsets.only(
+                    left: 20.w,
+                    right: 20.w,
+                  ),
+                  child: Column(
+                    children: [
+                      SizedBox(
+                        height: 15.h,
+                      ),
+                      Expanded(
+                        child: GridView(
+                          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 2,
+                            crossAxisSpacing: 20,
+                            mainAxisSpacing: 20,
+                            childAspectRatio: 1.2,
+                          ),
+                          children: [
+                            for (var i in quizes)
+                              DefaultCard(
+                                quiz: i,
+                              ),
+                          ],
                         ),
                       ),
                     ],
                   ),
                 ),
-                SizedBox(
-                  height: 10.h,
-                ),
-                Text(
-                  'Vamos começar',
-                  style: GoogleFonts.roboto(
-                    color: DefaultColors.black,
-                    fontSize: 20.sp,
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
-                SizedBox(
-                  height: 15.h,
-                ),
-                Expanded(
-                  child: GridView(
-                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      crossAxisSpacing: 20,
-                      mainAxisSpacing: 20,
-                      childAspectRatio: 1.2,
-                    ),
-                    children: [
-                      for (var i in quizes)
-                        DefaultCard(
-                          quiz: i,
-                        ),
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: 30.h,
-                ),
-              ],
-            ),
-          ],
-        ),
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }

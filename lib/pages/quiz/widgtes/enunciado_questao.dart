@@ -30,7 +30,7 @@ class EnunciadoQuestao extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: 15.h,
+          height: 10.h,
         ),
         Text(
           question,
@@ -39,7 +39,7 @@ class EnunciadoQuestao extends StatelessWidget {
             fontSize: 24.sp,
             fontWeight: FontWeight.w700,
           ),
-          textAlign: TextAlign.center,
+          textAlign: TextAlign.start,
         ),
       ],
     );

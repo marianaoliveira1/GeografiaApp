@@ -8,6 +8,7 @@ import 'package:geografia/questios/list/hidrografia.dart';
 import 'package:geografia/questios/list/indio.dart';
 import 'package:geografia/questios/list/politica_ambiental.dart';
 import 'package:geografia/questios/list/populacao.dart';
+import 'package:geografia/questios/list/relevo.dart';
 import 'package:geografia/questios/list/transportes.dart';
 import 'package:geografia/questios/list/urbanizcao.dart';
 import 'package:geografia/questios/list/vegetacao.dart';
@@ -23,7 +24,7 @@ List<ModelQuiz> quizes = [
     id: '2',
     title: 'Estados',
     questions: questionsEstados,
-    image: 'assets/icons/estados.png',
+    image: 'assets/icons/estado.png',
   ),
   ModelQuiz(
     id: '3',
@@ -53,54 +54,48 @@ List<ModelQuiz> quizes = [
     id: '7',
     title: 'Vegetação',
     questions: questionsVegetacao,
-    image: 'assets/icons/relevo.png',
+    image: 'assets/icons/vegetacao.png',
   ),
   ModelQuiz(
     id: '8',
     title: 'Hidrografia',
     questions: questionsHidrografia,
-    image: 'assets/icons/relevo.png',
+    image: 'assets/icons/hidrografia.png',
   ),
   ModelQuiz(
     id: '9',
     title: 'Popluação indigena',
     questions: questionsIndio,
-    image: 'assets/icons/relevo.png',
+    image: 'assets/icons/indio.png',
   ),
   ModelQuiz(
     id: '10',
     title: 'Migração',
     questions: questionsHidrografia,
-    image: 'assets/icons/relevo.png',
+    image: 'assets/icons/migracao.png',
   ),
   ModelQuiz(
     id: '11',
     title: 'Politica Ambiental',
     questions: questionsPoliticaAmbiental,
-    image: 'assets/icons/relevo.png',
+    image: 'assets/icons/politica-ambiental.png',
   ),
   ModelQuiz(
     id: '12',
     title: 'População',
     questions: questionsPopluacao,
-    image: 'assets/icons/relevo.png',
+    image: 'assets/icons/populacao.png',
   ),
   ModelQuiz(
     id: '13',
-    title: 'Relevo',
-    questions: questionsRelevo,
-    image: 'assets/icons/relevo.png',
+    title: 'Transporte',
+    questions: questionsTransportes,
+    image: 'assets/icons/transportes.png',
   ),
   ModelQuiz(
     id: '14',
-    title: 'Transporte',
-    questions: questionsTransportes,
-    image: 'assets/icons/relevo.png',
-  ),
-  ModelQuiz(
-    id: '15',
-    title: 'Vegetação',
-    questions: questionsVegetacao,
-    image: 'assets/icons/relevo.png',
+    title: 'Urbanização',
+    questions: questionsUrbanizacao,
+    image: 'assets/icons/urbanizacao.png',
   ),
 ];
