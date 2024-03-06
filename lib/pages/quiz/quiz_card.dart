@@ -26,6 +26,7 @@ class _QuizCardState extends State<QuizCard> {
 
   @override
   Widget build(BuildContext context) {
+    final quiz = widget.quiz.title;
     final questions = widget.quiz.questions;
 
     return Scaffold(
@@ -36,6 +37,14 @@ class _QuizCardState extends State<QuizCard> {
             Navigator.pop(context);
           },
           icon: const Icon(Icons.arrow_back),
+        ),
+        title: Text(
+          quiz,
+          style: GoogleFonts.roboto(
+            fontSize: 16.sp,
+            fontWeight: FontWeight.w500,
+            color: DefaultColors.grayBackground,
+          ),
         ),
         backgroundColor: DefaultColors.branco,
       ),
