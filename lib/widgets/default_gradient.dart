@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class DefaultGradient extends StatelessWidget {
+  const DefaultGradient({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(

@@ -15,4 +15,13 @@ class DefaultColors {
   static Color incorrectQuestion = const Color(0xFFab3232);
   static Color blue = const Color(0xFF5869ff);
   static Color branco = const Color(0xFFFFFFFF);
+
+  static LinearGradient defaultLinearGradient = const LinearGradient(
+    begin: Alignment.centerLeft,
+    end: Alignment.centerRight,
+    colors: [
+      Color(0xFF3550DC),
+      Color(0xFF08A1D4),
+    ],
+  );
 }

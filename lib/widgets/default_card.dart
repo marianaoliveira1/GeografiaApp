@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:geografia/model/quiz.dart';
 
@@ -32,7 +33,7 @@ class DefaultCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(16.h),
           boxShadow: [
             BoxShadow(
-              color: Colors.grey.withOpacity(0.1),
+              color: Colors.grey.withOpacity(0.3),
               spreadRadius: 1,
               blurRadius: 7,
               offset: const Offset(0, 3),
@@ -58,7 +59,7 @@ class DefaultCard extends StatelessWidget {
             ),
           ],
         ),
-      ),
+      ).animate().fade(duration: 2000.ms).slideY(),
     );
   }
 }

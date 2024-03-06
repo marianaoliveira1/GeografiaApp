@@ -29,7 +29,7 @@ class _QuizCardState extends State<QuizCard> {
     final questions = widget.quiz.questions;
 
     return Scaffold(
-      backgroundColor: DefaultColors.bege,
+      backgroundColor: DefaultColors.branco,
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {
@@ -37,7 +37,7 @@ class _QuizCardState extends State<QuizCard> {
           },
           icon: const Icon(Icons.arrow_back),
         ),
-        backgroundColor: DefaultColors.bege,
+        backgroundColor: DefaultColors.branco,
       ),
       body: Container(
         margin: EdgeInsets.only(
