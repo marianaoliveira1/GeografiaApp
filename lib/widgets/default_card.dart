@@ -51,7 +51,7 @@ class DefaultCard extends StatelessWidget {
             Text(
               quiz.title,
               style: GoogleFonts.roboto(
-                fontSize: 12.sp,
+                fontSize: 16.sp,
                 fontWeight: FontWeight.w500,
                 color: DefaultColors.grayBackground,
               ),

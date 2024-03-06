@@ -42,7 +42,7 @@ class AlternativaQuiz extends StatelessWidget {
               option,
               style: GoogleFonts.roboto(
                 color: color.red != color.green ? DefaultColors.branco : DefaultColors.black,
-                fontSize: 18.sp,
+                fontSize: 14.sp,
                 fontWeight: FontWeight.w400,
               ),
               textAlign: TextAlign.center,

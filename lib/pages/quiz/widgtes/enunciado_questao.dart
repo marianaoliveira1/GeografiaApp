@@ -25,7 +25,7 @@ class EnunciadoQuestao extends StatelessWidget {
           'Questão ${indexAction + 1} de $totalQuestion',
           style: GoogleFonts.roboto(
             color: DefaultColors.black,
-            fontSize: 14.sp,
+            fontSize: 10.sp,
             fontWeight: FontWeight.w400,
           ),
         ),
@@ -35,8 +35,8 @@ class EnunciadoQuestao extends StatelessWidget {
         Text(
           question,
           style: GoogleFonts.roboto(
-            color: Colors.black,
-            fontSize: 24.sp,
+            color: const Color(0xff333333),
+            fontSize: 16.sp,
             fontWeight: FontWeight.w700,
           ),
           textAlign: TextAlign.start,

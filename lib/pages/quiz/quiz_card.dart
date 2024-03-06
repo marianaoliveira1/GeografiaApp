@@ -44,99 +44,99 @@ class _QuizCardState extends State<QuizCard> {
           left: 20.w,
           right: 20.w,
         ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            EnunciadoQuestao(
-              indexAction: currentQuestionIndex,
-              totalQuestion: questions.length,
-              question: questions[currentQuestionIndex].title,
-            ),
-            SizedBox(
-              height: 25.h,
-            ),
-            for (int i = 0; i < questions[currentQuestionIndex].options.length; i++)
-              GestureDetector(
-                onTap: () {
-                  setState(() {
-                    selectedAnswer ??= i;
-                  });
-                },
-                child: AlternativaQuiz(
-                  option: questions[currentQuestionIndex].options.keys.toList()[i],
-                  color: selectedAnswer != null && (selectedAnswer == i || questions[currentQuestionIndex].options.values.toList()[i] == true)
-                      ? questions[currentQuestionIndex].options.values.toList()[i] == true
-                          ? DefaultColors.correctQuestion
-                          : DefaultColors.incorrectQuestion
-                      : DefaultColors.branco,
-                ),
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              EnunciadoQuestao(
+                indexAction: currentQuestionIndex,
+                totalQuestion: questions.length,
+                question: questions[currentQuestionIndex].title,
               ),
-            Expanded(
-              child: Container(),
-            ),
-            selectedAnswer == null
-                ? Container()
-                : Container(
-                    margin: EdgeInsets.only(
-                      bottom: 15.h,
-                      top: 15.h,
-                    ),
-                    decoration: BoxDecoration(
-                      color: DefaultColors.roxo,
-                      borderRadius: BorderRadius.circular(14.r),
-                    ),
-                    padding: EdgeInsets.only(
-                      bottom: 15.h,
-                      top: 15.h,
-                    ),
-                    child: InkWell(
-                      onTap: () {
-                        if (selectedAnswer != null) {
-                          if (currentQuestionIndex == questions.length - 1) {
-                            showDialog(
-                              context: context,
-                              builder: (ctx) => ResultQuiz(
-                                result: selectedAnswer!,
-                                questionLength: questions.length,
+              SizedBox(
+                height: 25.h,
+              ),
+              for (int i = 0; i < questions[currentQuestionIndex].options.length; i++)
+                GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      selectedAnswer ??= i;
+                    });
+                  },
+                  child: AlternativaQuiz(
+                    option: questions[currentQuestionIndex].options.keys.toList()[i],
+                    color: selectedAnswer != null && (selectedAnswer == i || questions[currentQuestionIndex].options.values.toList()[i] == true)
+                        ? questions[currentQuestionIndex].options.values.toList()[i] == true
+                            ? DefaultColors.correctQuestion
+                            : DefaultColors.incorrectQuestion
+                        : DefaultColors.branco,
+                  ),
+                ),
+              Container(),
+              selectedAnswer == null
+                  ? Container()
+                  : Container(
+                      margin: EdgeInsets.only(
+                        bottom: 15.h,
+                        top: 15.h,
+                      ),
+                      decoration: BoxDecoration(
+                        color: DefaultColors.roxo,
+                        borderRadius: BorderRadius.circular(14.r),
+                      ),
+                      padding: EdgeInsets.only(
+                        bottom: 15.h,
+                        top: 15.h,
+                      ),
+                      child: InkWell(
+                        onTap: () {
+                          if (selectedAnswer != null) {
+                            if (currentQuestionIndex == questions.length - 1) {
+                              showDialog(
+                                context: context,
+                                builder: (ctx) => ResultQuiz(
+                                  result: selectedAnswer!,
+                                  questionLength: questions.length,
+                                ),
+                              );
+                            } else {
+                              setState(() {
+                                currentQuestionIndex++;
+                                selectedAnswer = null;
+                              });
+                            }
+                          } else {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              const SnackBar(
+                                content: Text("Por favor, escolha uma opção"),
+                                behavior: SnackBarBehavior.floating,
+                                margin: EdgeInsets.symmetric(
+                                  vertical: 20,
+                                ),
                               ),
                             );
-                          } else {
-                            setState(() {
-                              currentQuestionIndex++;
-                              selectedAnswer = null;
-                            });
                           }
-                        } else {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                              content: Text("Por favor, escolha uma opção"),
-                              behavior: SnackBarBehavior.floating,
-                              margin: EdgeInsets.symmetric(
-                                vertical: 20,
+                        },
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Próxima questão',
+                              style: GoogleFonts.roboto(
+                                color: DefaultColors.bege,
+                                fontSize: 16.sp,
+                                fontWeight: FontWeight.w500,
                               ),
+                              textAlign: TextAlign.center,
                             ),
-                          );
-                        }
-                      },
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            'Próxima questão',
-                            style: GoogleFonts.roboto(
-                              color: DefaultColors.bege,
-                              fontSize: 16.sp,
-                              fontWeight: FontWeight.w500,
-                            ),
-                            textAlign: TextAlign.center,
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
-                  ),
-          ],
+            ],
+          ),
         ),
       ),
     );
