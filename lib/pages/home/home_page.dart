@@ -23,8 +23,19 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final currentUser = FirebaseAuth.instance.currentUser;
+  var search = '';
 
   TextEditingController searchController = TextEditingController();
+
+  @override
+  void initState() {
+    super.initState();
+    searchController.addListener(() {
+      setState(() {
+        search = searchController.text;
+      });
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -103,6 +114,11 @@ class _HomePageState extends State<HomePage> {
                       obscureText: false,
                       hintText: 'Pesquisar',
                       icon: Icons.search,
+                      onChanged: (search) {
+                        setState(() {
+                          search = searchController.text;
+                        });
+                      },
                     ),
                   ],
                 ),
@@ -127,7 +143,9 @@ class _HomePageState extends State<HomePage> {
                             childAspectRatio: 1.2,
                           ),
                           children: [
-                            for (var i in quizes)
+                            for (var i in quizes.where((element) {
+                              return element.title.toLowerCase().contains(search.toLowerCase());
+                            }))
                               DefaultCard(
                                 quiz: i,
                               ),

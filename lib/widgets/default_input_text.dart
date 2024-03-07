@@ -9,12 +9,16 @@ class DefaultInputText extends StatelessWidget {
   final IconData icon;
   final TextEditingController? controller;
   final bool obscureText;
+
+  final void Function(String)? onChanged;
+
   const DefaultInputText({
     super.key,
     required this.hintText,
     required this.icon,
     this.controller,
     required this.obscureText,
+    this.onChanged,
   });
 
   @override
@@ -22,7 +26,9 @@ class DefaultInputText extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: DefaultColors.bege,
-        borderRadius: BorderRadius.circular(14.h),
+        borderRadius: BorderRadius.circular(
+          14.r,
+        ),
         boxShadow: [
           BoxShadow(
             color: DefaultColors.title,
@@ -31,8 +37,11 @@ class DefaultInputText extends StatelessWidget {
         ],
       ),
       child: TextField(
+        onChanged: onChanged,
         controller: controller,
-        style: TextStyle(color: DefaultColors.title),
+        style: TextStyle(
+          color: DefaultColors.title,
+        ),
         decoration: InputDecoration(
           hintText: hintText,
           hintStyle: GoogleFonts.roboto(
