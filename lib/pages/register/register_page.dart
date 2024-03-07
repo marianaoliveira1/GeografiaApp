@@ -7,6 +7,7 @@ import 'package:geografia/controller/auth_service.dart';
 
 import 'package:geografia/utils/colors.dart';
 import 'package:geografia/widgets/default_button.dart';
+import 'package:geografia/widgets/default_image.dart';
 
 import 'package:geografia/widgets/default_input_text.dart';
 import 'package:geografia/widgets/default_title_h1.dart';
@@ -61,7 +62,7 @@ class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: DefaultColors.bege,
+      backgroundColor: DefaultColors.branco,
       body: Padding(
         padding: EdgeInsets.all(40.0.h),
         child: SingleChildScrollView(
@@ -72,9 +73,9 @@ class _RegisterPageState extends State<RegisterPage> {
               SizedBox(
                 height: 40.h,
               ),
-              // const DefaultImage(
-              //   image: 'assets/icons/palmeira.png',
-              // ),
+              const DefaultImage(
+                image: 'assets/icons/arara.png',
+              ),
               SizedBox(
                 height: 30.h,
               ),

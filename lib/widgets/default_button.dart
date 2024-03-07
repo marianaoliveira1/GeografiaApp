@@ -20,8 +20,10 @@ class DefaultButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: DefaultColors.primaryBackground,
-        borderRadius: BorderRadius.circular(14),
+        gradient: DefaultColors.defaultLinearGradient,
+        borderRadius: BorderRadius.circular(
+          14.r,
+        ),
       ),
       width: double.infinity,
       padding: EdgeInsets.only(bottom: 10.h, top: 10.h),
@@ -31,7 +33,7 @@ class DefaultButton extends StatelessWidget {
           text,
           textAlign: TextAlign.center,
           style: GoogleFonts.roboto(
-            color: DefaultColors.bege,
+            color: DefaultColors.branco,
             fontSize: 16.sp,
             fontWeight: FontWeight.w600,
           ),

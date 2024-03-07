@@ -25,7 +25,7 @@ class DefaultInputText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: DefaultColors.bege,
+        color: DefaultColors.branco,
         borderRadius: BorderRadius.circular(
           14.r,
         ),
