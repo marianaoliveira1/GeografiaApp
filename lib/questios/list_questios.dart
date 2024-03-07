@@ -1,4 +1,5 @@
 import 'package:geografia/model/quiz.dart';
+import 'package:geografia/questios/list/agrarias.dart';
 import 'package:geografia/questios/list/biomas.dart';
 import 'package:geografia/questios/list/clima.dart';
 import 'package:geografia/questios/list/economia.dart';
@@ -34,7 +35,7 @@ List<ModelQuiz> quizes = [
   ),
   ModelQuiz(
     id: '4',
-    title: 'Gloabalização',
+    title: 'Globalização',
     questions: questionsGlobalizacao,
     image: 'assets/icons-card/globalizacao.png',
   ),
@@ -64,7 +65,7 @@ List<ModelQuiz> quizes = [
   ),
   ModelQuiz(
     id: '9',
-    title: 'Popluação indigena',
+    title: 'População indigena',
     questions: questionsIndio,
     image: 'assets/icons-card/indio.png',
   ),
@@ -97,5 +98,17 @@ List<ModelQuiz> quizes = [
     title: 'Urbanização',
     questions: questionsUrbanizacao,
     image: 'assets/icons-card/urbanizacao.png',
+  ),
+  ModelQuiz(
+    id: '15',
+    title: 'Agricultura',
+    questions: questionsAgrarias,
+    image: 'assets/icons-card/agricultura.png',
+  ),
+  ModelQuiz(
+    id: '16',
+    title: 'Insdustria',
+    questions: questionsAgrarias,
+    image: 'assets/icons-card/industria.png',
   ),
 ];

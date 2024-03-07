@@ -56,6 +56,7 @@ class DefaultCard extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: DefaultColors.grayBackground,
               ),
+              textAlign: TextAlign.center,
             ),
           ],
         ),
