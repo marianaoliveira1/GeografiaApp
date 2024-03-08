@@ -47,93 +47,96 @@ class _HomePageState extends State<HomePage> {
         currentUser: currentUser,
         authService: authService,
       ),
-      body: Stack(
-        children: [
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Container(
-                padding: EdgeInsets.only(
-                  top: 50.h,
-                  left: 20.h,
-                  right: 20.h,
-                ),
-                height: 200.h,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                    bottomRight: Radius.circular(20.r),
-                    bottomLeft: Radius.circular(20.r),
-                  ),
-                  gradient: DefaultColors.defaultLinearGradient,
-                ),
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                        Text(
-                          'Oi, ',
-                          style: GoogleFonts.roboto(
-                            color: DefaultColors.branco,
-                            fontSize: 14.sp,
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ).animate().fade(duration: 1500.ms).slideY(),
-                        Obx(
-                          () => Text(
-                            '${authService.modelUser.value?.name}',
-                            style: GoogleFonts.roboto(
-                              color: DefaultColors.branco,
-                              fontSize: 14.sp,
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
-                        ).animate().fade(duration: 1500.ms).slideY(),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 10.h,
-                    ),
-                    Row(
-                      children: [
-                        Text(
-                          'Vamos testar seu conhecimento',
-                          style: GoogleFonts.roboto(
-                            color: DefaultColors.branco,
-                            fontSize: 20.sp,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ).animate().fade(duration: 1500.ms).slideY(),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 15.h,
-                    ),
-                    DefaultInputText(
-                      controller: searchController,
-                      obscureText: false,
-                      hintText: 'Pesquisar',
-                      icon: Icons.search,
-                      onChanged: (search) {
-                        setState(() {
-                          search = searchController.text;
-                        });
-                      },
-                    ),
-                  ],
-                ),
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: DefaultColors.defaultLinearGradient,
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Container(
+              padding: EdgeInsets.only(
+                top: 50.h,
+                left: 20.h,
+                right: 20.h,
               ),
-              Expanded(
-                child: Container(
-                  margin: EdgeInsets.only(
-                    left: 20.w,
-                    right: 20.w,
+              height: 200.h,
+              decoration: BoxDecoration(
+                gradient: DefaultColors.defaultLinearGradient,
+              ),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text(
+                        'Oi ',
+                        style: GoogleFonts.roboto(
+                          color: DefaultColors.branco,
+                          fontSize: 14.sp,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ).animate().fade(duration: 1500.ms).slideY(),
+                      // Obx(
+                      //   () => Text(
+                      //     '${authService.modelUser.value?.name}',
+                      //     style: GoogleFonts.roboto(
+                      //       color: DefaultColors.branco,
+                      //       fontSize: 14.sp,
+                      //       fontWeight: FontWeight.w400,
+                      //     ),
+                      //   ),
+                      // ).animate().fade(duration: 1500.ms).slideY(),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 10.h,
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        'Vamos testar seu conhecimento',
+                        style: GoogleFonts.roboto(
+                          color: DefaultColors.branco,
+                          fontSize: 20.sp,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ).animate().fade(duration: 1500.ms).slideY(),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 15.h,
+                  ),
+                  DefaultInputText(
+                    controller: searchController,
+                    obscureText: false,
+                    hintText: 'Pesquisar',
+                    icon: Icons.search,
+                    onChanged: (search) {
+                      setState(() {
+                        search = searchController.text;
+                      });
+                    },
+                  ),
+                ],
+              ),
+            ),
+            Expanded(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: DefaultColors.branco,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(30.r),
+                    topRight: Radius.circular(30.r),
+                  ),
+                ),
+                child: Padding(
+                  padding: EdgeInsets.only(
+                    left: 20.h,
+                    right: 20.h,
                   ),
                   child: Column(
                     children: [
-                      SizedBox(
-                        height: 15.h,
-                      ),
                       Expanded(
                         child: GridView(
                           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -156,9 +159,9 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
-            ],
-          ),
-        ],
+            ),
+          ],
+        ),
       ),
     );
   }
