@@ -70,23 +70,23 @@ class _HomePageState extends State<HomePage> {
                   Row(
                     children: [
                       Text(
-                        'Oi ',
+                        'Oi, ',
                         style: GoogleFonts.roboto(
                           color: DefaultColors.branco,
                           fontSize: 14.sp,
                           fontWeight: FontWeight.w400,
                         ),
                       ).animate().fade(duration: 1500.ms).slideY(),
-                      // Obx(
-                      //   () => Text(
-                      //     '${authService.modelUser.value?.name}',
-                      //     style: GoogleFonts.roboto(
-                      //       color: DefaultColors.branco,
-                      //       fontSize: 14.sp,
-                      //       fontWeight: FontWeight.w400,
-                      //     ),
-                      //   ),
-                      // ).animate().fade(duration: 1500.ms).slideY(),
+                      Obx(
+                        () => Text(
+                          '${authService.modelUser.value?.name}',
+                          style: GoogleFonts.roboto(
+                            color: DefaultColors.branco,
+                            fontSize: 14.sp,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
+                      ).animate().fade(duration: 1500.ms).slideY(),
                     ],
                   ),
                   SizedBox(
@@ -147,7 +147,9 @@ class _HomePageState extends State<HomePage> {
                           ),
                           children: [
                             for (var i in quizes.where((element) {
-                              return element.title.toLowerCase().contains(search.toLowerCase());
+                              return element.title.toLowerCase().contains(
+                                    search.toLowerCase(),
+                                  );
                             }))
                               DefaultCard(
                                 quiz: i,

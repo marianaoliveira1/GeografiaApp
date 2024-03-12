@@ -4,7 +4,7 @@ List<ModelQuestion> questionsPoliticaAmbiental = [
   {
     "id": "1",
     "title": "Qual bioma brasileiro é frequentemente associado a questões relacionadas ao desmatamento?",
-    "options": {
+    "alternatives": {
       "Amazônia": true,
       "Cerrado": false,
       "Mata Atlântica": false,
@@ -14,7 +14,7 @@ List<ModelQuestion> questionsPoliticaAmbiental = [
   {
     "id": "2",
     "title": "Em qual bioma se encontra a maior parte da Floresta Amazônica?",
-    "options": {
+    "alternatives": {
       "Amazônia": true,
       "Cerrado": false,
       "Mata Atlântica": false,
@@ -24,7 +24,7 @@ List<ModelQuestion> questionsPoliticaAmbiental = [
   {
     "id": "3",
     "title": "Quais são os principais desafios enfrentados na preservação da Mata Atlântica?",
-    "options": {
+    "alternatives": {
       "Amazônia": false,
       "Cerrado": false,
       "Mata Atlântica": true,
@@ -34,7 +34,7 @@ List<ModelQuestion> questionsPoliticaAmbiental = [
   {
     "id": "4",
     "title": "O Pantanal, importante ecossistema brasileiro, é classificado como qual tipo de bioma?",
-    "options": {
+    "alternatives": {
       "Amazônia": false,
       "Cerrado": false,
       "Mata Atlântica": false,
@@ -44,7 +44,7 @@ List<ModelQuestion> questionsPoliticaAmbiental = [
   {
     "id": "5",
     "title": "Qual bioma brasileiro é conhecido pela sua vegetação adaptada a climas semiáridos?",
-    "options": {
+    "alternatives": {
       "Amazônia": false,
       "Cerrado": false,
       "Mata Atlântica": false,
@@ -54,7 +54,7 @@ List<ModelQuestion> questionsPoliticaAmbiental = [
   {
     "id": "6",
     "title": "A política ambiental brasileira está diretamente ligada à preservação de quais recursos naturais?",
-    "options": {
+    "alternatives": {
       "Biodiversidade": true,
       "Recursos Hídricos": true,
       "Energia Fóssil": false,
@@ -64,7 +64,7 @@ List<ModelQuestion> questionsPoliticaAmbiental = [
   {
     "id": "7",
     "title": "Quais medidas podem ser adotadas para combater o desmatamento ilegal no Brasil?",
-    "options": {
+    "alternatives": {
       "Fiscalização intensificada": true,
       "Incentivo à exploração descontrolada": false,
       "Regularização fundiária": true,
@@ -74,7 +74,7 @@ List<ModelQuestion> questionsPoliticaAmbiental = [
   {
     "id": "8",
     "title": "Como a população pode contribuir para a preservação dos biomas brasileiros?",
-    "options": {
+    "alternatives": {
       "Participação em projetos de reflorestamento": true,
       "Descarte inadequado de resíduos": false,
       "Consumo sustentável": true,
@@ -84,7 +84,7 @@ List<ModelQuestion> questionsPoliticaAmbiental = [
   {
     "id": "9",
     "title": "Quais são os impactos ambientais associados ao desmatamento na Amazônia?",
-    "options": {
+    "alternatives": {
       "Perda de biodiversidade": true,
       "Aumento das áreas de conservação": false,
       "Melhoria na qualidade do solo": false,
@@ -94,7 +94,7 @@ List<ModelQuestion> questionsPoliticaAmbiental = [
   {
     "id": "10",
     "title": "Qual órgão governamental brasileiro é responsável pela implementação de políticas ambientais?",
-    "options": {
+    "alternatives": {
       "IBAMA": true,
       "ANVISA": false,
       "INPE": false,

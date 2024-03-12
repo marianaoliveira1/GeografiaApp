@@ -4,7 +4,7 @@ List<ModelQuestion> questionsEstados = [
   {
     "id": "1",
     "title": "Conforme a regionalização atual do Brasil, prevista pela Constituição de 1988, qual das alternativas NÃO é uma das regiões do país?",
-    "options": {
+    "alternatives": {
       "Centro-Norte": true,
       "Nordeste": false,
       "Sul": false,
@@ -15,7 +15,7 @@ List<ModelQuestion> questionsEstados = [
   {
     "id": "2",
     "title": "Qual dos estados abaixo faz parte da região Sudeste do Brasil?",
-    "options": {
+    "alternatives": {
       "Tocantins": false,
       "Espírito Santo": true,
       "Paraíba": false,
@@ -26,7 +26,7 @@ List<ModelQuestion> questionsEstados = [
   {
     "id": "3",
     "title": "A cidade de Teresina, localizada no Nordeste do Brasil, é capital de qual estado?",
-    "options": {
+    "alternatives": {
       "Paraíba": false,
       "Tocantins": false,
       "Piauí": true,
@@ -37,7 +37,7 @@ List<ModelQuestion> questionsEstados = [
   {
     "id": "4",
     "title": "Qual a região brasileira que apresenta a menor densidade demográfica?",
-    "options": {
+    "alternatives": {
       "Norte": true,
       "Nordeste": false,
       "Sul": false,
@@ -48,7 +48,7 @@ List<ModelQuestion> questionsEstados = [
   {
     "id": "5",
     "title": "Qual o tipo climático predominante na região Nordeste do Brasil?",
-    "options": {
+    "alternatives": {
       "Tropical": false,
       "Equatorial": false,
       "Semiárido": true,
@@ -59,7 +59,7 @@ List<ModelQuestion> questionsEstados = [
   {
     "id": "6",
     "title": "Qual bioma brasileiro, marcado pela sazonalidade das cheias, é encontrado tipicamente na região Centro-Oeste do país?",
-    "options": {
+    "alternatives": {
       "Araucárias": false,
       "Mata Atlântica": false,
       "Pantanal": true,
@@ -70,7 +70,7 @@ List<ModelQuestion> questionsEstados = [
   {
     "id": "7",
     "title": "Qual é a maior metrópole em população da região Sudeste do Brasil?",
-    "options": {
+    "alternatives": {
       "Rio de Janeiro": false,
       "Brasília": false,
       "São Paulo": true,
@@ -81,7 +81,7 @@ List<ModelQuestion> questionsEstados = [
   {
     "id": "8",
     "title": "Quais grupos de imigrantes tiveram grande protagonismo na colonização da região Sul do Brasil?",
-    "options": {
+    "alternatives": {
       "Africanos e chineses": false,
       "Canadenses e alemães": false,
       "Coreanos e japoneses": false,
@@ -92,7 +92,7 @@ List<ModelQuestion> questionsEstados = [
   {
     "id": "9",
     "title": "Marque a alternativa que corresponde à quantidade correta de estados do Brasil",
-    "options": {
+    "alternatives": {
       "26 estados e 1 Distrito Federal": true,
       "25 estados": false,
       "25 estados e 1 Distrito Federal": false,
@@ -102,7 +102,7 @@ List<ModelQuestion> questionsEstados = [
   {
     "id": "10",
     "title": "Qual é o estado brasileiro com a maior extensão territorial e qual é o estado com a menor extensão territorial",
-    "options": {
+    "alternatives": {
       " Amazonas e Acre.": false,
       "Pará e Alagoas": false,
       "Amazonas e Sergipe": true,
@@ -113,7 +113,7 @@ List<ModelQuestion> questionsEstados = [
   {
     "id": "11",
     "title": "Qual estado brasileiro é famoso por suas Cataratas do Iguaçu, uma das Sete Maravilhas Naturais do Mundo?",
-    "options": {
+    "alternatives": {
       "Paraná": true,
       "Santa Catarina": false,
       "Rio Grande do Sul": false,
@@ -123,7 +123,7 @@ List<ModelQuestion> questionsEstados = [
   {
     "id": "12",
     "title": "Qual estado brasileiro é conhecido por suas belas praias e pelo turismo?",
-    "options": {
+    "alternatives": {
       "Ceará": true,
       "Rio Grande do Norte": false,
       "Paraíba": false,

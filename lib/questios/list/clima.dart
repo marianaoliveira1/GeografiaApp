@@ -4,7 +4,7 @@ List<ModelQuestion> questionsClima = [
   {
     "id": "1",
     "title": "Qual é o clima predominante na região Norte do Brasil?",
-    "options": {
+    "alternatives": {
       "Equatorial": true,
       "Tropical": false,
       "Subtropical": false,
@@ -14,7 +14,7 @@ List<ModelQuestion> questionsClima = [
   {
     "id": "2",
     "title": "Em qual região do Brasil encontramos o clima subtropical?",
-    "options": {
+    "alternatives": {
       "Sul": true,
       "Nordeste": false,
       "Centro-Oeste": false,
@@ -24,7 +24,7 @@ List<ModelQuestion> questionsClima = [
   {
     "id": "3",
     "title": "Quais estados do Brasil são caracterizados pelo clima semiárido?",
-    "options": {
+    "alternatives": {
       "Bahia, Pernambuco, Ceará e outros": true,
       "Rio de Janeiro, São Paulo, Minas Gerais": false,
       "Amazonas, Acre, Roraima": false,
@@ -34,7 +34,7 @@ List<ModelQuestion> questionsClima = [
   {
     "id": "4",
     "title": "O clima tropical úmido é predominante em qual região do Brasil?",
-    "options": {
+    "alternatives": {
       "Centro-Oeste e partes do Norte": false,
       "Sul e Sudeste": false,
       "Norte e Nordeste": true,
@@ -44,7 +44,7 @@ List<ModelQuestion> questionsClima = [
   {
     "id": "5",
     "title": "Qual é o principal fator determinante do clima na região Sul do Brasil?",
-    "options": {
+    "alternatives": {
       "Latitude": true,
       "Altitude": false,
       "Proximidade do Oceano Atlântico": false,
@@ -54,7 +54,7 @@ List<ModelQuestion> questionsClima = [
   {
     "id": "6",
     "title": "Em que região do Brasil o clima equatorial úmido é predominante?",
-    "options": {
+    "alternatives": {
       "Nordeste": false,
       "Sul": false,
       "Norte": true,
@@ -64,7 +64,7 @@ List<ModelQuestion> questionsClima = [
   {
     "id": "7",
     "title": "Quais estados do Brasil têm influência do clima tropical de altitude?",
-    "options": {
+    "alternatives": {
       "Minas Gerais e São Paulo": false,
       "Rio Grande do Sul e Santa Catarina": false,
       "São Paulo e Rio de Janeiro": true,
@@ -74,7 +74,7 @@ List<ModelQuestion> questionsClima = [
   {
     "id": "8",
     "title": "O clima tropical de altitude é conhecido por ser predominante em que tipo de ambiente?",
-    "options": {
+    "alternatives": {
       "Pantanal": false,
       "Cerrado": false,
       "Mata Atlântica": true,
@@ -84,7 +84,7 @@ List<ModelQuestion> questionsClima = [
   {
     "id": "9",
     "title": "Qual é a característica principal do clima subtropical no Brasil?",
-    "options": {
+    "alternatives": {
       "Invernos frios e verões quentes": true,
       "Temperaturas elevadas durante todo o ano": false,
       "Chuvas abundantes durante o ano todo": false,
@@ -94,7 +94,7 @@ List<ModelQuestion> questionsClima = [
   {
     "id": "10",
     "title": "Em qual região do Brasil predominam os climas tropicais com estação seca?",
-    "options": {
+    "alternatives": {
       "Centro-Oeste e partes do Norte": false,
       "Sudeste e Sul": false,
       "Norte e Nordeste": true,

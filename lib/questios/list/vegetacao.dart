@@ -4,7 +4,7 @@ List<ModelQuestion> questionsVegetacao = [
   {
     "id": "1",
     "title": "Qual é a maior floresta tropical do Brasil?",
-    "options": {
+    "alternatives": {
       "Amazônia": true,
       "Cerrado": false,
       "Mata Atlântica": false,
@@ -14,7 +14,7 @@ List<ModelQuestion> questionsVegetacao = [
   {
     "id": "2",
     "title": "Qual bioma brasileiro é caracterizado por extensas planícies e savanas?",
-    "options": {
+    "alternatives": {
       "Amazônia": false,
       "Cerrado": true,
       "Mata Atlântica": false,
@@ -24,7 +24,7 @@ List<ModelQuestion> questionsVegetacao = [
   {
     "id": "3",
     "title": "Em qual bioma encontramos a maior diversidade de espécies vegetais?",
-    "options": {
+    "alternatives": {
       "Amazônia": true,
       "Cerrado": false,
       "Mata Atlântica": false,
@@ -34,7 +34,7 @@ List<ModelQuestion> questionsVegetacao = [
   {
     "id": "4",
     "title": "Quais áreas são conhecidas por abrigar o bioma de transição entre a Floresta Amazônica e o Cerrado?",
-    "options": {
+    "alternatives": {
       "Amazônia": false,
       "Cerrado": true,
       "Mata Atlântica": false,
@@ -44,7 +44,7 @@ List<ModelQuestion> questionsVegetacao = [
   {
     "id": "5",
     "title": "Onde podemos encontrar o bioma da Mata Atlântica no Brasil?",
-    "options": {
+    "alternatives": {
       "Amazônia": false,
       "Cerrado": false,
       "Mata Atlântica": true,
@@ -54,7 +54,7 @@ List<ModelQuestion> questionsVegetacao = [
   {
     "id": "6",
     "title": "Qual região do Brasil é marcada por vegetação adaptada a climas semiáridos?",
-    "options": {
+    "alternatives": {
       "Amazônia": false,
       "Cerrado": false,
       "Mata Atlântica": false,
@@ -64,7 +64,7 @@ List<ModelQuestion> questionsVegetacao = [
   {
     "id": "7",
     "title": "Em qual bioma se encontra a maior parte da produção agrícola do Brasil?",
-    "options": {
+    "alternatives": {
       "Amazônia": false,
       "Cerrado": true,
       "Mata Atlântica": false,
@@ -74,7 +74,7 @@ List<ModelQuestion> questionsVegetacao = [
   {
     "id": "8",
     "title": "Qual bioma é conhecido por ser uma floresta sazonal, com árvores que perdem as folhas durante uma parte do ano?",
-    "options": {
+    "alternatives": {
       "Amazônia": false,
       "Cerrado": false,
       "Mata Atlântica": true,
@@ -84,7 +84,7 @@ List<ModelQuestion> questionsVegetacao = [
   {
     "id": "9",
     "title": "Em qual bioma a biodiversidade é ameaçada principalmente devido ao desmatamento?",
-    "options": {
+    "alternatives": {
       "Amazônia": true,
       "Cerrado": false,
       "Mata Atlântica": false,
@@ -94,7 +94,7 @@ List<ModelQuestion> questionsVegetacao = [
   {
     "id": "10",
     "title": "Qual bioma é conhecido por possuir uma vegetação densa e rica em recursos hídricos?",
-    "options": {
+    "alternatives": {
       "Amazônia": true,
       "Cerrado": false,
       "Mata Atlântica": false,

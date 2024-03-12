@@ -4,7 +4,7 @@ List<ModelQuestion> questionsEconomia = [
   {
     "id": "1",
     "title": "Qual setor da economia brasileira é conhecido por sua expressiva produção agropecuária?",
-    "options": {
+    "alternatives": {
       "Indústria": false,
       "Serviços": false,
       "Agricultura": true,
@@ -14,7 +14,7 @@ List<ModelQuestion> questionsEconomia = [
   {
     "id": "2",
     "title": "O que representa o PIB (Produto Interno Bruto) na economia brasileira?",
-    "options": {
+    "alternatives": {
       "Produto agrícola": false,
       "Índice de inflação": false,
       "Total de bens e serviços produzidos": true,
@@ -24,7 +24,7 @@ List<ModelQuestion> questionsEconomia = [
   {
     "id": "3",
     "title": "Qual é o principal indicador de emprego e desemprego no Brasil?",
-    "options": {
+    "alternatives": {
       "Taxa de juros": false,
       "PIB per capita": false,
       "Taxa de desemprego": true,
@@ -34,7 +34,7 @@ List<ModelQuestion> questionsEconomia = [
   {
     "id": "4",
     "title": "Em qual década ocorreu o Plano Real, que estabilizou a economia brasileira?",
-    "options": {
+    "alternatives": {
       "Década de 1980": false,
       "Década de 1990": true,
       "Década de 2000": false,
@@ -44,7 +44,7 @@ List<ModelQuestion> questionsEconomia = [
   {
     "id": "5",
     "title": "Quais são os principais produtos de exportação do Brasil?",
-    "options": {
+    "alternatives": {
       "Petróleo e gás": false,
       "Automóveis": false,
       "Soja e carne bovina": true,
@@ -54,7 +54,7 @@ List<ModelQuestion> questionsEconomia = [
   {
     "id": "6",
     "title": "O que é o IPCA, um dos principais índices de inflação no Brasil?",
-    "options": {
+    "alternatives": {
       "Índice de Preços ao Consumidor Amplo": true,
       "Índice de Confiança do Consumidor": false,
       "Índice de Desenvolvimento Humano": false,
@@ -64,7 +64,7 @@ List<ModelQuestion> questionsEconomia = [
   {
     "id": "7",
     "title": "Qual é o papel do Banco Central na economia brasileira?",
-    "options": {
+    "alternatives": {
       "Controle da inflação e política monetária": true,
       "Produção de alimentos": false,
       "Desenvolvimento de tecnologia": false,
@@ -74,7 +74,7 @@ List<ModelQuestion> questionsEconomia = [
   {
     "id": "8",
     "title": "Em que ano o Brasil se tornou uma república federativa?",
-    "options": {
+    "alternatives": {
       "1889": true,
       "1922": false,
       "1930": false,
@@ -84,7 +84,7 @@ List<ModelQuestion> questionsEconomia = [
   {
     "id": "9",
     "title": "O que são as reformas estruturais na economia brasileira?",
-    "options": {
+    "alternatives": {
       "Medidas temporárias para estimular o consumo": false,
       "Reformas na legislação trabalhista e previdenciária": true,
       "Aumento dos gastos públicos": false,
@@ -94,7 +94,7 @@ List<ModelQuestion> questionsEconomia = [
   {
     "id": "10",
     "title": "Qual é o impacto do câmbio na economia brasileira?",
-    "options": {
+    "alternatives": {
       "Apenas afeta o setor financeiro": false,
       "Influencia nas exportações e importações": true,
       "Não tem relevância econômica": false,

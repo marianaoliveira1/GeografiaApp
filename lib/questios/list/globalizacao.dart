@@ -4,7 +4,7 @@ List<ModelQuestion> questionsGlobalizacao = [
   {
     "id": "1",
     "title": "Quais são os impactos da globalização no meio ambiente brasileiro?",
-    "options": {
+    "alternatives": {
       "Desmatamento na Amazônia": true,
       "Expansão agrícola no Cerrado": false,
       "Preservação da Mata Atlântica": false,
@@ -14,7 +14,7 @@ List<ModelQuestion> questionsGlobalizacao = [
   {
     "id": "2",
     "title": "Como a globalização afeta a economia do Brasil?",
-    "options": {
+    "alternatives": {
       "Aumento das exportações": true,
       "Desindustrialização": false,
       "Diversificação da matriz econômica": false,
@@ -24,7 +24,7 @@ List<ModelQuestion> questionsGlobalizacao = [
   {
     "id": "3",
     "title": "Quais são os aspectos culturais influenciados pela globalização no Brasil?",
-    "options": {
+    "alternatives": {
       "Homogeneização cultural": true,
       "Preservação das tradições locais": false,
       "Difusão de novas práticas culturais": false,
@@ -34,7 +34,7 @@ List<ModelQuestion> questionsGlobalizacao = [
   {
     "id": "4",
     "title": "De que forma a globalização impacta as relações sociais no Brasil?",
-    "options": {
+    "alternatives": {
       "Intercâmbio cultural": true,
       "Aumento da desigualdade social": false,
       "Fortalecimento das comunidades locais": false,
@@ -44,7 +44,7 @@ List<ModelQuestion> questionsGlobalizacao = [
   {
     "id": "5",
     "title": "Como a globalização influencia as políticas ambientais no Brasil?",
-    "options": {
+    "alternatives": {
       "Cooperação internacional para preservação": true,
       "Exploração desenfreada dos recursos naturais": false,
       "Fortalecimento de medidas sustentáveis": false,
@@ -54,7 +54,7 @@ List<ModelQuestion> questionsGlobalizacao = [
   {
     "id": "6",
     "title": "Quais são os desafios enfrentados pelo Brasil diante da globalização?",
-    "options": {
+    "alternatives": {
       "Competitividade econômica": true,
       "Preservação da identidade cultural": false,
       "Sustentabilidade ambiental": false,
@@ -64,7 +64,7 @@ List<ModelQuestion> questionsGlobalizacao = [
   {
     "id": "7",
     "title": "Como a globalização impacta o setor tecnológico no Brasil?",
-    "options": {
+    "alternatives": {
       "Integração às inovações globais": true,
       "Dependência tecnológica estrangeira": false,
       "Estímulo à pesquisa e desenvolvimento local": false,
@@ -74,7 +74,7 @@ List<ModelQuestion> questionsGlobalizacao = [
   {
     "id": "8",
     "title": "Quais são as implicações da globalização nas questões de segurança nacional?",
-    "options": {
+    "alternatives": {
       "Cooperação internacional contra ameaças transnacionais": true,
       "Vulnerabilidade a pressões externas": false,
       "Fortalecimento das forças armadas nacionais": false,
@@ -84,7 +84,7 @@ List<ModelQuestion> questionsGlobalizacao = [
   {
     "id": "9",
     "title": "Como a globalização influencia o acesso à educação no Brasil?",
-    "options": {
+    "alternatives": {
       "Intercâmbio acadêmico": true,
       "Desigualdade no acesso à educação de qualidade": false,
       "Diversificação de métodos de ensino": false,
@@ -94,7 +94,7 @@ List<ModelQuestion> questionsGlobalizacao = [
   {
     "id": "10",
     "title": "Quais são os efeitos da globalização nas políticas de saúde pública no Brasil?",
-    "options": {
+    "alternatives": {
       "Colaboração internacional em pesquisa médica": true,
       "Desafios na gestão de epidemias globais": false,
       "Fortalecimento do sistema de saúde nacional": false,

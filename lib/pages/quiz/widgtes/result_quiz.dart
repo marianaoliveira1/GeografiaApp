@@ -5,11 +5,11 @@ import 'package:geografia/utils/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ResultQuiz extends StatelessWidget {
-  final int result;
+  final int qntAcertos;
   final int questionLength;
   const ResultQuiz({
     super.key,
-    required this.result,
+    required this.qntAcertos,
     required this.questionLength,
   });
 
@@ -20,7 +20,7 @@ class ResultQuiz extends StatelessWidget {
       body: Center(
         child: Container(
           margin: EdgeInsets.all(20.w),
-          height: 300.h,
+          height: 200.h,
           width: 300.w,
           decoration: BoxDecoration(
             color: DefaultColors.branco,
@@ -38,17 +38,17 @@ class ResultQuiz extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 30.h),
-              if (result > 5) Image.asset('assets/icons/sad.png', height: 60.h) else Image.asset('assets/icons/sunglass.png', height: 60.h),
-              SizedBox(height: 30.h),
               Text(
-                "Você acertou $result de $questionLength questões",
+                "Você acertou $qntAcertos de $questionLength questões",
                 style: GoogleFonts.roboto(
                   color: DefaultColors.title,
                   fontSize: 16.sp,
                   fontWeight: FontWeight.w400,
                 ),
               ),
-              SizedBox(height: 40.h),
+              Expanded(
+                child: Container(),
+              ),
               Container(
                 decoration: BoxDecoration(
                   color: DefaultColors.roxo,
@@ -62,6 +62,7 @@ class ResultQuiz extends StatelessWidget {
                 margin: EdgeInsets.only(
                   left: 20.h,
                   right: 20.h,
+                  bottom: 20.h,
                 ),
                 child: InkWell(
                   onTap: () {

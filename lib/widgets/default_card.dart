@@ -60,7 +60,7 @@ class DefaultCard extends StatelessWidget {
             ),
           ],
         ),
-      ).animate().fade(duration: 2000.ms).slideY(),
+      ).animate().fade(duration: 500.ms).slideY(),
     );
   }
 }

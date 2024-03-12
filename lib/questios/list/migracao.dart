@@ -4,7 +4,7 @@ List<ModelQuestion> questionsMigracao = [
   {
     "id": "1",
     "title": "Qual região do Brasil recebe o maior número de migrantes internos?",
-    "options": {
+    "alternatives": {
       "Sudeste": false,
       "Nordeste": false,
       "Centro-Oeste": false,
@@ -15,7 +15,7 @@ List<ModelQuestion> questionsMigracao = [
   {
     "id": "2",
     "title": "O processo de migração interna no Brasil é influenciado por quais fatores?",
-    "options": {
+    "alternatives": {
       "Econômicos": true,
       "Climáticos": false,
       "Culturais": false,
@@ -25,7 +25,7 @@ List<ModelQuestion> questionsMigracao = [
   {
     "id": "3",
     "title": "Em qual período histórico ocorreu um grande fluxo migratório do Nordeste para o Sudeste?",
-    "options": {
+    "alternatives": {
       "Década de 1950": false,
       "Década de 1960": false,
       "Década de 1970": false,
@@ -36,7 +36,7 @@ List<ModelQuestion> questionsMigracao = [
   {
     "id": "4",
     "title": "Quais são as consequências sociais da migração interna no Brasil?",
-    "options": {
+    "alternatives": {
       "Integração cultural": false,
       "Desigualdades regionais": true,
       "Preservação ambiental": false,
@@ -46,7 +46,7 @@ List<ModelQuestion> questionsMigracao = [
   {
     "id": "5",
     "title": "Qual região é conhecida por ser uma área de expulsão de migrantes devido à escassez de água?",
-    "options": {
+    "alternatives": {
       "Sudeste": false,
       "Nordeste": true,
       "Centro-Oeste": false,
@@ -57,7 +57,7 @@ List<ModelQuestion> questionsMigracao = [
   {
     "id": "6",
     "title": "A migração interna no Brasil contribui para a formação de quais tipos de metrópoles?",
-    "options": {
+    "alternatives": {
       "Econômicas": false,
       "Culturais": false,
       "Industrializadas": true,
@@ -67,7 +67,7 @@ List<ModelQuestion> questionsMigracao = [
   {
     "id": "7",
     "title": "Quais são os impactos da migração interna nas áreas de saúde e educação?",
-    "options": {
+    "alternatives": {
       "Melhoria na saúde": false,
       "Aumento da desigualdade educacional": true,
       "Diminuição da oferta de serviços de saúde": false,
@@ -77,7 +77,7 @@ List<ModelQuestion> questionsMigracao = [
   {
     "id": "8",
     "title": "O fenômeno da migração de campo para cidade no Brasil é conhecido como:",
-    "options": {
+    "alternatives": {
       "Urbanização": true,
       "Desertificação": false,
       "Êxodo rural": false,
@@ -87,7 +87,7 @@ List<ModelQuestion> questionsMigracao = [
   {
     "id": "9",
     "title": "Quais são os principais estados receptores de migrantes no Brasil?",
-    "options": {
+    "alternatives": {
       "São Paulo": true,
       "Pará": false,
       "Minas Gerais": false,
@@ -98,7 +98,7 @@ List<ModelQuestion> questionsMigracao = [
   {
     "id": "10",
     "title": "Como a migração interna contribui para a diversidade cultural no Brasil?",
-    "options": {
+    "alternatives": {
       "Homogeneização cultural": false,
       "Enriquecimento cultural": true,
       "Diminuição da diversidade cultural": false,

@@ -4,7 +4,7 @@ List<ModelQuestion> questionsHidrografia = [
   {
     "id": "1",
     "title": "Qual é o rio mais extenso do Brasil?",
-    "options": {
+    "alternatives": {
       "Rio Amazonas": true,
       "Rio São Francisco": false,
       "Rio Paraná": false,
@@ -14,7 +14,7 @@ List<ModelQuestion> questionsHidrografia = [
   {
     "id": "2",
     "title": "Qual é o maior lago do Brasil?",
-    "options": {
+    "alternatives": {
       "Lago de Sobradinho": false,
       "Lago de Tucuruí": false,
       "Lago Paranoá": false,
@@ -24,7 +24,7 @@ List<ModelQuestion> questionsHidrografia = [
   {
     "id": "3",
     "title": "Em que região do Brasil está localizado o Pantanal?",
-    "options": {
+    "alternatives": {
       "Sul": false,
       "Centro-Oeste": true,
       "Sudeste": false,
@@ -34,7 +34,7 @@ List<ModelQuestion> questionsHidrografia = [
   {
     "id": "4",
     "title": "Qual é o rio que separa os estados do Maranhão e do Piauí?",
-    "options": {
+    "alternatives": {
       "Rio Parnaíba": true,
       "Rio São Francisco": false,
       "Rio Tocantins": false,
@@ -44,7 +44,7 @@ List<ModelQuestion> questionsHidrografia = [
   {
     "id": "5",
     "title": "Em qual bacia hidrográfica está localizado o Rio Paraná?",
-    "options": {
+    "alternatives": {
       "Bacia do Amazonas": false,
       "Bacia do São Francisco": false,
       "Bacia do Paraná": true,
@@ -54,7 +54,7 @@ List<ModelQuestion> questionsHidrografia = [
   {
     "id": "6",
     "title": "Qual é o rio que forma a fronteira entre Brasil e Argentina?",
-    "options": {
+    "alternatives": {
       "Rio São Francisco": false,
       "Rio Paraná": true,
       "Rio Uruguai": false,
@@ -64,7 +64,7 @@ List<ModelQuestion> questionsHidrografia = [
   {
     "id": "7",
     "title": "Qual é a principal fonte de água potável para a Região Metropolitana de São Paulo?",
-    "options": {
+    "alternatives": {
       "Represa de Guarapiranga": false,
       "Rio Paraíba do Sul": false,
       "Represa Billings": true,
@@ -74,7 +74,7 @@ List<ModelQuestion> questionsHidrografia = [
   {
     "id": "8",
     "title": "Em que estado brasileiro está localizado o Rio Doce?",
-    "options": {
+    "alternatives": {
       "Minas Gerais": true,
       "Espírito Santo": false,
       "Bahia": false,
@@ -84,7 +84,7 @@ List<ModelQuestion> questionsHidrografia = [
   {
     "id": "9",
     "title": "Qual é o maior rio totalmente brasileiro?",
-    "options": {
+    "alternatives": {
       "Rio Tocantins": false,
       "Rio Paraná": false,
       "Rio São Francisco": true,
@@ -94,7 +94,7 @@ List<ModelQuestion> questionsHidrografia = [
   {
     "id": "10",
     "title": "Em que estado brasileiro está localizado o Rio Madeira?",
-    "options": {
+    "alternatives": {
       "Amazonas": false,
       "Rondônia": true,
       "Acre": false,

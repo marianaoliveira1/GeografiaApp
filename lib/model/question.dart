@@ -6,22 +6,22 @@ import 'package:flutter/foundation.dart';
 class ModelQuestion {
   final String id;
   final String title;
-  final Map<String, bool> options;
+  final Map<String, bool> alternatives;
   ModelQuestion({
     required this.id,
     required this.title,
-    required this.options,
+    required this.alternatives,
   });
 
   ModelQuestion copyWith({
     String? id,
     String? title,
-    Map<String, bool>? options,
+    Map<String, bool>? alternatives,
   }) {
     return ModelQuestion(
       id: id ?? this.id,
       title: title ?? this.title,
-      options: options ?? this.options,
+      alternatives: alternatives ?? this.alternatives,
     );
   }
 
@@ -29,7 +29,7 @@ class ModelQuestion {
     return <String, dynamic>{
       'id': id,
       'title': title,
-      'options': options,
+      'alternatives': alternatives,
     };
   }
 
@@ -37,8 +37,8 @@ class ModelQuestion {
     return ModelQuestion(
       id: map['id'] as String,
       title: map['title'] as String,
-      options: Map<String, bool>.from(
-        (map['options'] as Map<String, bool>),
+      alternatives: Map<String, bool>.from(
+        (map['alternatives'] as Map<String, bool>),
       ),
     );
   }
@@ -48,15 +48,15 @@ class ModelQuestion {
   factory ModelQuestion.fromJson(String source) => ModelQuestion.fromMap(json.decode(source) as Map<String, dynamic>);
 
   @override
-  String toString() => 'ModelQuiz(id: $id, title: $title, options: $options)';
+  String toString() => 'ModelQuestion(id: $id, title: $title, alternatives: $alternatives)';
 
   @override
   bool operator ==(covariant ModelQuestion other) {
     if (identical(this, other)) return true;
 
-    return other.id == id && other.title == title && mapEquals(other.options, options);
+    return other.id == id && other.title == title && mapEquals(other.alternatives, alternatives);
   }
 
   @override
-  int get hashCode => id.hashCode ^ title.hashCode ^ options.hashCode;
+  int get hashCode => id.hashCode ^ title.hashCode ^ alternatives.hashCode;
 }

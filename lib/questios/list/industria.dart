@@ -4,7 +4,7 @@ List<ModelQuestion> questionsIndustria = [
   {
     "id": "1",
     "title": "Quais são os principais setores industriais do Brasil?",
-    "options": {
+    "alternatives": {
       "Automobilístico, siderúrgico, petroquímico, alimentício, têxtil": true,
       "Tecnologia da informação, energia, construção civil, aeronáutico, naval": false,
       "Mineração, telecomunicações, farmacêutico, químico, agrícola": false,
@@ -14,7 +14,7 @@ List<ModelQuestion> questionsIndustria = [
   {
     "id": "2",
     "title": "Qual é a importância da indústria automobilística na economia brasileira?",
-    "options": {
+    "alternatives": {
       "Gera empregos, movimenta a cadeia produtiva e contribui significativamente para o PIB": true,
       "Tem baixa relevância econômica, pois é um setor em declínio no Brasil": false,
       "É responsável por altos índices de poluição e degradação ambiental": false,
@@ -24,7 +24,7 @@ List<ModelQuestion> questionsIndustria = [
   {
     "id": "3",
     "title": "Quais são os principais desafios enfrentados pela indústria brasileira?",
-    "options": {
+    "alternatives": {
       "Alta carga tributária, falta de infraestrutura, custos de produção elevados, concorrência externa": true,
       "Baixa demanda interna, falta de mão de obra qualificada, burocracia excessiva, falta de inovação": false,
       "Impactos ambientais, falta de políticas públicas adequadas, dependência de commodities, desvalorização da moeda": false,
@@ -34,7 +34,7 @@ List<ModelQuestion> questionsIndustria = [
   {
     "id": "4",
     "title": "Como a tecnologia tem sido utilizada para modernizar a indústria brasileira?",
-    "options": {
+    "alternatives": {
       "Automatização de processos, uso de sistemas de gestão integrada, implementação de novas tecnologias de produção": true,
       "Desenvolvimento de produtos ecologicamente corretos, incentivo à produção artesanal, reciclagem de resíduos industriais": false,
       "Uso de mão de obra intensiva, produção em larga escala, desenvolvimento de produtos genéricos": false,
@@ -44,7 +44,7 @@ List<ModelQuestion> questionsIndustria = [
   {
     "id": "5",
     "title": "Qual é o impacto da indústria na distribuição espacial da população no Brasil?",
-    "options": {
+    "alternatives": {
       "Concentração de indústrias em áreas urbanas gera crescimento populacional e impactos socioeconômicos": true,
       "Desconcentração industrial reduz o êxodo rural e promove o desenvolvimento regional": false,
       "Industrialização em áreas rurais diminui a qualidade de vida da população local": false,
@@ -54,7 +54,7 @@ List<ModelQuestion> questionsIndustria = [
   {
     "id": "6",
     "title": "Qual é o papel das indústrias de base no desenvolvimento econômico do Brasil?",
-    "options": {
+    "alternatives": {
       "Fornecem insumos para outros setores industriais e contribuem para a geração de empregos e renda": true,
       "São responsáveis por altos índices de poluição e degradação ambiental": false,
       "Dependem exclusivamente de importações de tecnologia e componentes": false,
@@ -64,7 +64,7 @@ List<ModelQuestion> questionsIndustria = [
   {
     "id": "7",
     "title": "Como a indústria naval tem contribuído para a economia brasileira?",
-    "options": {
+    "alternatives": {
       "Gera empregos, movimenta a economia e fortalece a indústria de construção naval": true,
       "Tem baixa relevância econômica, pois é um setor em declínio no Brasil": false,
       "Depende exclusivamente de importações de tecnologia e componentes": false,
@@ -74,7 +74,7 @@ List<ModelQuestion> questionsIndustria = [
   {
     "id": "8",
     "title": "Quais são os principais polos industriais do Brasil?",
-    "options": {
+    "alternatives": {
       "São Paulo, Rio de Janeiro, Minas Gerais, Rio Grande do Sul": true,
       "Paraná, Bahia, Pernambuco, Ceará": false,
       "Goiás, Santa Catarina, Espírito Santo, Pará": false,
@@ -84,7 +84,7 @@ List<ModelQuestion> questionsIndustria = [
   {
     "id": "9",
     "title": "Qual é a importância da indústria de tecnologia da informação (TI) para o Brasil?",
-    "options": {
+    "alternatives": {
       "Gera empregos qualificados, promove a inovação e contribui para o desenvolvimento tecnológico": true,
       "Tem baixa relevância econômica, pois é um setor em declínio no Brasil": false,
       "Depende exclusivamente de importações de tecnologia e componentes": false,
@@ -94,7 +94,7 @@ List<ModelQuestion> questionsIndustria = [
   {
     "id": "10",
     "title": "Como a indústria química tem contribuído para a economia brasileira?",
-    "options": {
+    "alternatives": {
       "Produz insumos para diversos setores, como agrícola, farmacêutico, cosmético e plástico": true,
       "Tem baixa relevância econômica, pois é um setor em declínio no Brasil": false,
       "Depende exclusivamente de importações de tecnologia e componentes": false,
@@ -104,7 +104,7 @@ List<ModelQuestion> questionsIndustria = [
   {
     "id": "11",
     "title": "Qual é o impacto da indústria na qualidade de vida da população brasileira?",
-    "options": {
+    "alternatives": {
       "Gera empregos, aumenta a renda, melhora a infraestrutura e os serviços públicos": true,
       "Causa impactos negativos na saúde, degrada o meio ambiente e aumenta o custo de vida": false,
       "Promove a exclusão social, aumenta a criminalidade e a desigualdade de renda": false,

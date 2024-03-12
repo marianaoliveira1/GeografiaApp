@@ -4,7 +4,7 @@ List<ModelQuestion> questionsBiomas = [
   ModelQuestion(
     id: '1',
     title: 'Qual é o maior bioma brasileiro, conhecido por abrigar a Floresta Amazônica?',
-    options: {
+    alternatives: {
       'Amazônia': true,
       'Cerrado': false,
       'Mata Atlântica': false,
@@ -14,7 +14,7 @@ List<ModelQuestion> questionsBiomas = [
   ModelQuestion(
     id: '2',
     title: 'Qual bioma brasileiro é caracterizado por clima semiárido e vegetação xerófila, com fauna e flora adaptadas à aridez?',
-    options: {
+    alternatives: {
       'Amazônia': false,
       'Cerrado': false,
       'Mata Atlântica': false,
@@ -24,7 +24,7 @@ List<ModelQuestion> questionsBiomas = [
   ModelQuestion(
     id: '3',
     title: 'Qual bioma brasileiro era originalmente coberto por florestas exuberantes e hoje está extremamente ameaçado, com apenas 12,5% da cobertura original remanescente?',
-    options: {
+    alternatives: {
       'Amazônia': false,
       'Cerrado': false,
       'Mata Atlântica': true,
@@ -34,7 +34,7 @@ List<ModelQuestion> questionsBiomas = [
   ModelQuestion(
     id: '4',
     title: 'Qual bioma brasileiro é conhecido como "planície inundável", com fauna e flora adaptadas às inundações sazonais?',
-    options: {
+    alternatives: {
       'Amazônia': false,
       'Cerrado': false,
       'Pantanal': true,
@@ -44,7 +44,7 @@ List<ModelQuestion> questionsBiomas = [
   ModelQuestion(
     id: '5',
     title: 'Qual bioma brasileiro é caracterizado por campos e pastagens, com fauna e flora adaptadas ao clima frio e úmido?',
-    options: {
+    alternatives: {
       'Amazônia': false,
       'Cerrado': false,
       'Mata Atlântica': false,
@@ -54,7 +54,7 @@ List<ModelQuestion> questionsBiomas = [
   ModelQuestion(
     id: '6',
     title: 'Qual é o bioma brasileiro considerado o mais populoso, com cerca de 120 milhões de habitantes?',
-    options: {
+    alternatives: {
       'Amazônia': false,
       'Cerrado': false,
       'Mata Atlântica': true,
@@ -64,7 +64,7 @@ List<ModelQuestion> questionsBiomas = [
   ModelQuestion(
     id: '7',
     title: 'Qual bioma brasileiro é considerado o mais importante para a produção de água, por abrigar as nascentes de grandes rios?',
-    options: {
+    alternatives: {
       'Amazônia': false,
       'Cerrado': true,
       'Mata Atlântica': false,
@@ -74,7 +74,7 @@ List<ModelQuestion> questionsBiomas = [
   ModelQuestion(
     id: '8',
     title: 'Qual bioma brasileiro é o mais extenso, com cerca de 4,2 milhões de km²?',
-    options: {
+    alternatives: {
       'Amazônia': true,
       'Cerrado': false,
       'Mata Atlântica': false,
@@ -84,7 +84,7 @@ List<ModelQuestion> questionsBiomas = [
   ModelQuestion(
     id: '9',
     title: 'Qual bioma brasileiro é o menos extenso, com cerca de 176 mil km²?',
-    options: {
+    alternatives: {
       'Amazônia': false,
       'Cerrado': false,
       'Mata Atlântica': false,
@@ -94,7 +94,7 @@ List<ModelQuestion> questionsBiomas = [
   ModelQuestion(
     id: '10',
     title: 'Qual bioma brasileiro é conhecido como "berço das águas", por abrigar as nascentes de importantes rios?',
-    options: {
+    alternatives: {
       'Amazônia': false,
       'Cerrado': true,
       'Mata Atlântica': false,
@@ -104,7 +104,7 @@ List<ModelQuestion> questionsBiomas = [
   ModelQuestion(
     id: '11',
     title: 'Qual bioma brasileiro é considerado o mais ameaçado, com mais de 85% da cobertura original devastada?',
-    options: {
+    alternatives: {
       'Amazônia': false,
       'Cerrado': false,
       'Mata Atlântica': true,

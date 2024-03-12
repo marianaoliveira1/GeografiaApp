@@ -8,6 +8,7 @@ import 'package:geografia/pages/quiz/widgtes/result_quiz.dart';
 
 import 'package:geografia/pages/quiz/widgtes/alternativa_questoes.dart';
 import 'package:geografia/pages/quiz/widgtes/enunciado_questao.dart';
+
 import 'package:geografia/utils/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -22,7 +23,13 @@ class QuizCard extends StatefulWidget {
 class _QuizCardState extends State<QuizCard> {
   int currentQuestionIndex = 0;
   int? selectedAnswer;
-  final List<String> answers = [];
+  late final List<String> selectedAlternatives;
+
+  @override
+  void initState() {
+    selectedAlternatives = List<String>.generate(widget.quiz.questions.length, (counter) => "");
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -66,17 +73,19 @@ class _QuizCardState extends State<QuizCard> {
               SizedBox(
                 height: 25.h,
               ),
-              for (int i = 0; i < questions[currentQuestionIndex].options.length; i++)
+              for (int cQuestionsAlternativeIndex = 0; cQuestionsAlternativeIndex < questions[currentQuestionIndex].alternatives.length; cQuestionsAlternativeIndex++)
                 GestureDetector(
                   onTap: () {
                     setState(() {
-                      selectedAnswer ??= i;
+                      selectedAnswer ??= cQuestionsAlternativeIndex;
                     });
+
+                    selectedAlternatives[currentQuestionIndex] = questions[currentQuestionIndex].alternatives.keys.toList()[cQuestionsAlternativeIndex];
                   },
                   child: AlternativaQuiz(
-                    option: questions[currentQuestionIndex].options.keys.toList()[i],
-                    color: selectedAnswer != null && (selectedAnswer == i || questions[currentQuestionIndex].options.values.toList()[i] == true)
-                        ? questions[currentQuestionIndex].options.values.toList()[i] == true
+                    option: questions[currentQuestionIndex].alternatives.keys.toList()[cQuestionsAlternativeIndex],
+                    color: selectedAnswer != null && (selectedAnswer == cQuestionsAlternativeIndex || questions[currentQuestionIndex].alternatives.values.toList()[cQuestionsAlternativeIndex] == true)
+                        ? questions[currentQuestionIndex].alternatives.values.toList()[cQuestionsAlternativeIndex] == true
                             ? DefaultColors.correctQuestion
                             : DefaultColors.incorrectQuestion
                         : DefaultColors.branco,
@@ -102,10 +111,25 @@ class _QuizCardState extends State<QuizCard> {
                         onTap: () {
                           if (selectedAnswer != null) {
                             if (currentQuestionIndex == questions.length - 1) {
+                              int numeroAcertos = 0;
+
+                              print(numeroAcertos);
+                              print(selectedAlternatives);
+                              print(questions);
+
+                              for (int i = 0; i <= questions.length - 1; i++) {
+                                final question = questions[i];
+                                final selectedAlternative = selectedAlternatives[i];
+
+                                if (question.alternatives[selectedAlternative] == true) {
+                                  numeroAcertos++;
+                                }
+                              }
+
                               showDialog(
                                 context: context,
                                 builder: (ctx) => ResultQuiz(
-                                  result: selectedAnswer!,
+                                  qntAcertos: numeroAcertos,
                                   questionLength: questions.length,
                                 ),
                               );

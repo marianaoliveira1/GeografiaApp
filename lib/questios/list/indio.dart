@@ -4,7 +4,7 @@ List<ModelQuestion> questionsIndio = [
   {
     "id": "1",
     "title": "Qual é a maior reserva indígena do Brasil?",
-    "options": {
+    "alternatives": {
       "Xingu": true,
       "Pataxó": false,
       "Guarani-Kaiowá": false,
@@ -14,7 +14,7 @@ List<ModelQuestion> questionsIndio = [
   {
     "id": "2",
     "title": "Quantas etnias indígenas existem no Brasil?",
-    "options": {
+    "alternatives": {
       "Mais de 200": true,
       "50-100": false,
       "Menos de 20": false,
@@ -24,7 +24,7 @@ List<ModelQuestion> questionsIndio = [
   {
     "id": "3",
     "title": "Em qual região do Brasil há uma forte presença indígena?",
-    "options": {
+    "alternatives": {
       "Amazônia": true,
       "Nordeste": false,
       "Centro-Oeste": false,
@@ -34,7 +34,7 @@ List<ModelQuestion> questionsIndio = [
   {
     "id": "4",
     "title": "Qual é o principal órgão responsável pela proteção dos direitos indígenas no Brasil?",
-    "options": {
+    "alternatives": {
       "FUNAI": true,
       "IBAMA": false,
       "INCRA": false,
@@ -44,7 +44,7 @@ List<ModelQuestion> questionsIndio = [
   {
     "id": "5",
     "title": "Quais são as principais ameaças enfrentadas pelas comunidades indígenas?",
-    "options": {
+    "alternatives": {
       "Desmatamento": true,
       "Pesquisa Científica": false,
       "Turismo desordenado": false,
@@ -54,7 +54,7 @@ List<ModelQuestion> questionsIndio = [
   {
     "id": "6",
     "title": "Qual é a língua indígena mais falada no Brasil?",
-    "options": {
+    "alternatives": {
       "Tupi-Guarani": true,
       "Pataxó": false,
       "Xavante": false,
@@ -64,7 +64,7 @@ List<ModelQuestion> questionsIndio = [
   {
     "id": "7",
     "title": "Qual é o principal desafio para a demarcação de terras indígenas no Brasil?",
-    "options": {
+    "alternatives": {
       "Conflitos fundiários": true,
       "Falta de interesse governamental": false,
       "Invasões por garimpeiros": false,
@@ -74,7 +74,7 @@ List<ModelQuestion> questionsIndio = [
   {
     "id": "8",
     "title": "Em qual documento internacional estão expressos os direitos indígenas?",
-    "options": {
+    "alternatives": {
       "Declaração das Nações Unidas sobre os Direitos dos Povos Indígenas": true,
       "Protocolo de Kyoto": false,
       "Tratado de Tordesilhas": false,
@@ -84,7 +84,7 @@ List<ModelQuestion> questionsIndio = [
   {
     "id": "9",
     "title": "Qual é o impacto das hidrelétricas nas comunidades indígenas?",
-    "options": {
+    "alternatives": {
       "Deslocamento forçado": true,
       "Melhoria das condições de vida": false,
       "Preservação cultural": false,
@@ -94,7 +94,7 @@ List<ModelQuestion> questionsIndio = [
   {
     "id": "10",
     "title": "Como as comunidades indígenas contribuem para a preservação ambiental?",
-    "options": {
+    "alternatives": {
       "Conhecimento tradicional": true,
       "Desmatamento indiscriminado": false,
       "Uso intensivo de agrotóxicos": false,

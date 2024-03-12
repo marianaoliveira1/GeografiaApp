@@ -4,7 +4,7 @@ List<ModelQuestion> questionsUrbanizacao = [
   {
     "id": "1",
     "title": "Qual é o maior desafio da urbanização no Brasil?",
-    "options": {
+    "alternatives": {
       "Falta de infraestrutura": true,
       "Desemprego": false,
       "Poluição": false,
@@ -14,7 +14,7 @@ List<ModelQuestion> questionsUrbanizacao = [
   {
     "id": "2",
     "title": "Em que região do Brasil a urbanização é mais intensa?",
-    "options": {
+    "alternatives": {
       "Sudeste": true,
       "Norte": false,
       "Nordeste": false,
@@ -24,7 +24,7 @@ List<ModelQuestion> questionsUrbanizacao = [
   {
     "id": "3",
     "title": "Qual o impacto da urbanização nas áreas verdes?",
-    "options": {
+    "alternatives": {
       "Redução das áreas verdes": true,
       "Aumento das áreas verdes": false,
       "Manutenção das áreas verdes": false,
@@ -34,7 +34,7 @@ List<ModelQuestion> questionsUrbanizacao = [
   {
     "id": "4",
     "title": "Quais são os principais problemas sociais relacionados à urbanização?",
-    "options": {
+    "alternatives": {
       "Favelização": true,
       "Desigualdade social": false,
       "Analfabetismo": false,
@@ -44,7 +44,7 @@ List<ModelQuestion> questionsUrbanizacao = [
   {
     "id": "5",
     "title": "Como a urbanização afeta o meio ambiente?",
-    "options": {
+    "alternatives": {
       "Aumento da poluição do ar": true,
       "Preservação da fauna e flora": false,
       "Diminuição do consumo de recursos naturais": false,
@@ -54,7 +54,7 @@ List<ModelQuestion> questionsUrbanizacao = [
   {
     "id": "6",
     "title": "Qual é a importância do planejamento urbano na mitigação dos problemas causados pela urbanização?",
-    "options": {
+    "alternatives": {
       "Fundamental para o desenvolvimento sustentável": true,
       "Irrelevante para os problemas urbanos": false,
       "Aumenta os problemas urbanos": false,
@@ -64,7 +64,7 @@ List<ModelQuestion> questionsUrbanizacao = [
   {
     "id": "7",
     "title": "Quais são os impactos da urbanização nas áreas rurais?",
-    "options": {
+    "alternatives": {
       "Êxodo rural": true,
       "Fortalecimento da agricultura familiar": false,
       "Preservação das tradições locais": false,
@@ -74,7 +74,7 @@ List<ModelQuestion> questionsUrbanizacao = [
   {
     "id": "8",
     "title": "Qual é o papel das políticas públicas na gestão da urbanização?",
-    "options": {
+    "alternatives": {
       "Essencial para a promoção do desenvolvimento sustentável": true,
       "Ineficaz na solução dos problemas urbanos": false,
       "Aumenta a desigualdade social": false,
@@ -84,7 +84,7 @@ List<ModelQuestion> questionsUrbanizacao = [
   {
     "id": "9",
     "title": "Como a urbanização impacta o acesso à educação nas áreas urbanas?",
-    "options": {
+    "alternatives": {
       "Facilita o acesso à educação": true,
       "Diminui as oportunidades educacionais": false,
       "Não interfere no acesso à educação": false,
@@ -94,7 +94,7 @@ List<ModelQuestion> questionsUrbanizacao = [
   {
     "id": "10",
     "title": "Quais são os principais desafios ambientais relacionados à urbanização no Brasil?",
-    "options": {
+    "alternatives": {
       "Poluição da água": true,
       "Preservação das reservas naturais": false,
       "Diminuição do efeito estufa": false,

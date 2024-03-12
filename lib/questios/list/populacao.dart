@@ -4,7 +4,7 @@ List<ModelQuestion> questionsPopluacao = [
   {
     "id": "1",
     "title": "Qual é a região brasileira com a maior população?",
-    "options": {
+    "alternatives": {
       "Norte": false,
       "Nordeste": false,
       "Centro-Oeste": false,
@@ -15,7 +15,7 @@ List<ModelQuestion> questionsPopluacao = [
   {
     "id": "2",
     "title": "Em qual década o Brasil atingiu a marca de 100 milhões de habitantes?",
-    "options": {
+    "alternatives": {
       "1920": false,
       "1950": true,
       "1980": false,
@@ -25,7 +25,7 @@ List<ModelQuestion> questionsPopluacao = [
   {
     "id": "3",
     "title": "Qual é a cidade mais populosa do Brasil?",
-    "options": {
+    "alternatives": {
       "São Paulo": true,
       "Rio de Janeiro": false,
       "Brasília": false,
@@ -35,7 +35,7 @@ List<ModelQuestion> questionsPopluacao = [
   {
     "id": "4",
     "title": "Em qual estado brasileiro está localizada a maior população indígena?",
-    "options": {
+    "alternatives": {
       "Amazonas": true,
       "Mato Grosso do Sul": false,
       "Roraima": false,
@@ -45,7 +45,7 @@ List<ModelQuestion> questionsPopluacao = [
   {
     "id": "5",
     "title": "Qual é o estado brasileiro menos populoso?",
-    "options": {
+    "alternatives": {
       "Amapá": false,
       "Roraima": false,
       "Acre": false,
@@ -55,7 +55,7 @@ List<ModelQuestion> questionsPopluacao = [
   {
     "id": "6",
     "title": "Em que ano o Brasil alcançou a marca de 200 milhões de habitantes?",
-    "options": {
+    "alternatives": {
       "1990": false,
       "2000": false,
       "2010": true,
@@ -65,7 +65,7 @@ List<ModelQuestion> questionsPopluacao = [
   {
     "id": "7",
     "title": "Qual é a porcentagem aproximada de população urbana no Brasil?",
-    "options": {
+    "alternatives": {
       "50%": false,
       "70%": true,
       "90%": false,
@@ -75,7 +75,7 @@ List<ModelQuestion> questionsPopluacao = [
   {
     "id": "8",
     "title": "Em que região do Brasil a taxa de natalidade é geralmente mais alta?",
-    "options": {
+    "alternatives": {
       "Nordeste": true,
       "Sul": false,
       "Centro-Oeste": false,
@@ -85,7 +85,7 @@ List<ModelQuestion> questionsPopluacao = [
   {
     "id": "9",
     "title": "Qual é a expectativa de vida média no Brasil?",
-    "options": {
+    "alternatives": {
       "70 anos": false,
       "75 anos": false,
       "80 anos": true,
@@ -95,7 +95,7 @@ List<ModelQuestion> questionsPopluacao = [
   {
     "id": "10",
     "title": "Em qual década a população brasileira teve a maior taxa de crescimento?",
-    "options": {
+    "alternatives": {
       "1960": true,
       "1980": false,
       "2000": false,
