@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:geografia/pages/login/widgtes/button_cadastrar.dart';
 import 'package:geografia/controller/auth_service.dart';
 
 import 'package:geografia/widgets/default_button.dart';

@@ -18,14 +18,10 @@ class AuthController extends GetxController {
       if (user == null) {
         modelUser.value = null;
         Get.toNamed("/login");
-        print("caba n encontrado");
       } else {
         _firebaseFirestore.collection('users').doc(user.uid).get().then((DocumentSnapshot documentSnapshot) {
           if (documentSnapshot.exists) {
-            print(documentSnapshot.data() as Map<String, dynamic>);
             modelUser.value = ModelUser.fromMap(documentSnapshot.data() as Map<String, dynamic>);
-          } else {
-            print("caba n encontrado");
           }
         });
       }
