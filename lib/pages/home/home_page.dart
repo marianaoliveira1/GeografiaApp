@@ -87,6 +87,13 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                       ).animate().fade(duration: 1500.ms).slideY(),
+                      // IconButton(
+                      //   onPressed: authService.signOut,
+                      //   icon: const Icon(
+                      //     Icons.logout,
+                      //     color: Colors.white,
+                      //   ),
+                      // ),
                     ],
                   ),
                   SizedBox(

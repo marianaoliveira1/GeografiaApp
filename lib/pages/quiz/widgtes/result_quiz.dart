@@ -37,7 +37,9 @@ class ResultQuiz extends StatelessWidget {
                   fontWeight: FontWeight.w800,
                 ),
               ),
-              SizedBox(height: 30.h),
+              SizedBox(
+                height: 30.h,
+              ),
               Text(
                 "Você acertou $qntAcertos de $questionLength questões",
                 style: GoogleFonts.roboto(

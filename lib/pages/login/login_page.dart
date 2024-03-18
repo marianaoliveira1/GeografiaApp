@@ -1,6 +1,7 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:geografia/pages/login/widgtes/button_cadastrar.dart';
@@ -14,6 +15,7 @@ import 'package:geografia/widgets/default_image.dart';
 import 'package:geografia/widgets/default_input_text.dart';
 import 'package:geografia/widgets/default_title_h1.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LoginPage extends StatefulWidget {
   final void Function()? onTap;
@@ -91,7 +93,29 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(
                 height: 15.h,
               ),
-              ButtonCadastrar(widget: widget),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Text(
+                    'Ainda não possui uma conta? ',
+                    style: GoogleFonts.roboto(
+                      color: DefaultColors.title,
+                      fontSize: 12.sp,
+                    ),
+                  ).animate().fade(duration: 1500.ms).slideY(),
+                  GestureDetector(
+                    onTap: widget.onTap,
+                    child: Text(
+                      'Cadastre-se  ',
+                      style: GoogleFonts.roboto(
+                        color: DefaultColors.title,
+                        fontSize: 12.sp,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ).animate().fade(duration: 1500.ms).slideY(),
+                  ),
+                ],
+              ),
               SizedBox(
                 height: 80.h,
               ),

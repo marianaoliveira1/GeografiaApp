@@ -113,10 +113,6 @@ class _QuizCardState extends State<QuizCard> {
                             if (currentQuestionIndex == questions.length - 1) {
                               int numeroAcertos = 0;
 
-                              print(numeroAcertos);
-                              print(selectedAlternatives);
-                              print(questions);
-
                               for (int i = 0; i <= questions.length - 1; i++) {
                                 final question = questions[i];
                                 final selectedAlternative = selectedAlternatives[i];
